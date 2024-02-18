@@ -57,7 +57,7 @@ function Services() {
   ]
 
   return (
-    <div id='services' className='w-full bg-[#F0F0F0] px-[2%] py-24 flex flex-col items-center justify-center mt-[100px]'>
+    <div id='services' className='w-full bg-[#F0F0F0] px-[2%] py-24 flex flex-col items-center justify-center mt-[100px] relative'>
       <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
       <h1 className='text-[#0c0c0c] text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
       <p className='text-[22px] text-[#4A5568] text-center'>joscript مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال </p>

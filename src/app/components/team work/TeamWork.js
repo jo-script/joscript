@@ -79,7 +79,7 @@ function TeamWork() {
             <div className="w-full flex flex-wrap items-center justify-center gap-5 gap-y-16 mt-12">
                 {
                     teamWork.map((data, index) => (
-                        <div key={index} className=" w-[300px] h-40 bg-white rounded-md flex flex-col items-start justify-between p-4 hover:scale-105 cursor-default transition-all delay-75">
+                        <div key={index} className=" w-[300px] h-40 bg-[#ffffff] rounded-md flex flex-col items-start justify-between p-4 hover:scale-105 cursor-default transition-all delay-75">
                             <div className='flex items-center gap-3 '>
                                 <Image src={data.img} width={80} alt='' className='rounded-full' />
                                 <div className="flex flex-col justify-center h-full ">
