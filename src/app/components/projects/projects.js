@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-import FrontEnd from './pages/frontEnd'
-import BackEnd from './pages/backEnd'
-import FullStack from './pages/fullStack'
+import FrontEnd from './pages/FrontEnd'
+import BackEnd from './pages/BackEnd'
+import FullStack from './pages/FullStack'
 import MobileApplication from './pages/MobileApplication'
 import CyberSecurity from './pages/CyberSecurity'
 import UiUx from './pages/UiUx'
