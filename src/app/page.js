@@ -4,6 +4,7 @@ import HomePage from "./components/home/homePage";
 import Services from './components/servicess/services'
 import { Rubik} from "next/font/google";
 import Projects from "./components/projects/projects";
+import TeamWork from "./components/team work/TeamWork";
 const almarai = Rubik({
   subsets:['arabic'],
   weight:'300'
@@ -17,6 +18,7 @@ export default function Home() {
       <HomePage />
       <Services />
       <Projects />
+      <TeamWork />
 
     </div>
   );

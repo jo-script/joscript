@@ -57,7 +57,7 @@ function Services() {
   ]
 
   return (
-    <div id='services' className='w-full px-[2%] flex flex-col items-center justify-centers bg-[#ffffff] mt-[100px] py-12 pt-28 relative'>
+    <div id='services' className='w-full bg-[#F0F0F0] px-[2%] py-24 flex flex-col items-center justify-center mt-[100px]'>
       <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
       <h1 className='text-[#0c0c0c] text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
       <p className='text-[22px] text-[#4A5568] text-center'>joscript مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال </p>
@@ -66,7 +66,7 @@ function Services() {
       <div className='flex items-center justify-center flex-wrap gap-5 mt-16'>
         {
           service.map((item, index) => (
-            <div id='card' key={index} className='max-w-[330px] h-[287px] bg-[#fafafa] rounded-[10px] shadow-[#00000015] shadow-lg px-4 py-9 flex flex-col justify-center cursor-pointer border-[1px] hover:border-[#fa9e00bc] hover:scale-[1.03] transition-all delay-75  '>
+            <div id='card' key={index} className='max-w-[330px] h-[287px] bg-[#ffffff] rounded-[10px] shadow-[#00000015] shadow-lg px-4 py-9 flex flex-col justify-center cursor-pointer border-[1px] hover:border-[#fa9e00bc] hover:scale-[1.03] transition-all delay-75  '>
               <Image src={item.icon} className='border-[1px] border-[#FAA000] rounded-full p-1 scale-[1.2]' alt='' />
               <p className='text-[21px] text-[#faa000] mt-4 font-bold'>{item.title}</p>
               <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75'></p>

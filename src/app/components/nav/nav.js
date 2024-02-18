@@ -10,7 +10,7 @@ import { GrAppsRounded } from "react-icons/gr";
 
 function Nav() {
 
-  const linksStyle = 'w-[155px] px-3 h-9 text-[#0c0c0c] bg-gray-50 text-[17px]  text-center leading-9 cursor-pointer rounded-md border-[#0000] hover:border-[#fa9e008d] border-[1px] transition-all delay-75 shadow-sm '
+  const linksStyle = ' px-3 h-9 text-[#0c0c0c] text-[17px]  text-center leading-9 cursor-pointer rounded-md border-[#0000] hover:border-[#fa9e008d] border-[1px] transition-all delay-75  '
 
   let [openSide, setOpenSide] = useState(false)
   // open side bare
@@ -27,10 +27,11 @@ function Nav() {
       </a>
 
       {/* links */}
-      <div className='flex items-center gap-[3%]  max-[1000px]:hidden ' style={{ direction: 'rtl' }}>
+      <div className='w-full flex items-center gap-[3%]  max-[1000px]:hidden ' style={{ direction: 'rtl' }}>
         <a href="#home" className={linksStyle}>الصفحة الرئيسية</a>
         <a href="#services" className={linksStyle}><button>الخدمات</button></a>
-        <a href="" className={linksStyle}><button>المشاريع</button></a>
+        <a href="#projects" className={linksStyle}><button>المشاريع</button></a>
+        <a href="#teamwork" className={linksStyle}><button>فريق ألعمل</button></a>
         <a href="" className={linksStyle}>حول joscript</a>
       </div>
 
@@ -43,11 +44,11 @@ function Nav() {
           <div className="flex flex-col items-end justify-end gap-3 w-[90%] " style={{direction:'rtl'}}>
             <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <HiOutlineHome className="scale-[2] text-[#faa000]" /> <a href="#home" className="py-2 inline-block w-full">الصفحة الرئيسية</a></p>
             <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <LiaHandsHelpingSolid   className="scale-[2] text-[#faa000]" /> <a href="#services" className="py-2 inline-block w-full">الخدمات</a></p>
-            <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <GrAppsRounded  className="scale-[2] text-[#faa000]" /> <a href="#project" className="py-2 inline-block w-full">المشاريع</a></p>
+            <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <GrAppsRounded  className="scale-[2] text-[#faa000]" /> <a href="#projects" className="py-2 inline-block w-full">المشاريع</a></p>
           </div>
         </nav>
       </div>
-      <div onClick={openSdeBare}  className={`${openSide ? 'w-full' : 'w-0'}  h-[100vh]  min-[1131px]:w-0  flex flex-col items-center bg-[#00000041] shadow-md absolute  top-[80px] right-0 transition-all delay-100 z-[0]`}></div>
+      <div onClick={openSdeBare}  className={`${openSide ? 'w-full' : 'w-0'}  h-[100vh]  min-[1131px]:w-0  flex flex-col items-center  shadow-md absolute  top-[80px] right-0 transition-all delay-100 z-[0]`}></div>
 
     </div>
   )

@@ -18,7 +18,7 @@
 }
 
 body {
-  background: #F0F0F0;
+  background: wite;
   padding-top: 100px;
 }
 
@@ -41,4 +41,14 @@ html{
 ::-webkit-scrollbar-thumb{
   background: #6d6d6db2;
   border-radius: 50px;
+}
+
+#projects-nav::-webkit-scrollbar{
+  height: 2px;
+  background: rgba(216, 216, 216, 0.694);
+}
+
+#projects-nav::-webkit-scrollbar-thumb{
+  height: 5px;
+  background: #faa000;
 }
