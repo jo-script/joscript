@@ -66,7 +66,7 @@ function Services() {
       <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 max-[471px]:gap-1 mt-16 '>
         {
           service.map((item, index) => (
-            <div id='card' key={index} className='w-[330px] h-auto bg-[#ffffff] rounded-[10px] shadow-[#00000015] shadow-lg px-4 py-9 flex flex-col justify-center cursor-pointer border-[1px] hover:border-[#fa9e00bc] hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px]  max-[471px]:w-[135px]  '>
+            <div id='card' key={index} className='w-[330px] h-auto bg-[#ffffff] rounded-[10px] shadow-[#00000015] shadow-lg px-4 py-9 flex flex-col justify-center cursor-pointer border-[1px] hover:border-[#fa9e00bc] hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px]  max-[471px]:w-[175px]  '>
               <Image src={item.icon} className='border-[1px] border-[#FAA000] rounded-full p-1 scale-[1.2] max-[471px]:scale-[.9] max-[471px]:mb-[-8px]' alt='' />
               <p className='text-[21px] text-[#faa000] mt-4 font-bold max-[550px]:text-[17px] max-[712px]:text-[17px] max-[471px]:text-[14px]'>{item.title}</p>
               <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75 '></p>
