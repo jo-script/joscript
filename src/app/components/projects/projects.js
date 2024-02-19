@@ -22,7 +22,7 @@ function Projects() {
 
     return (
 
-        <div id='projects' className='w-full px-[2%] flex flex-col items-center justify-center mt-[100px] relative '>
+        <div id='projects' className='w-full px-[0%] flex flex-col items-center justify-center mt-[100px] relative '>
             <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
             <h1 className='text-[#0c0c0c] text-[35px] mt-4 '>المشاريع</h1>
             <p className='text-[20px] text-[#4A5568] text-center mt-2'>المشاريع التي نفذها الطلاب خلال مدة الكورس وبعد التخرج</p>

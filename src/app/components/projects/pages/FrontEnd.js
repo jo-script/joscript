@@ -46,7 +46,7 @@ function FrontEnd() {
     <div className='flex items-center justify-center flex-wrap  gap-5 max-[555px]:gap-1 mt-16'>
     {
         projects.map((item, index) => (
-            <div  key={index} className=' card max-w-[254px] h-[170px] max-[555px]:w-[45%] max-[555px]:h-[180px] flex items-center justify-center flex-col text-end rounded-[10px] transition-all delay-75 overflow-hidden relative'>
+            <div  key={index} className=' card max-w-[254px] h-[170px] max-[555px]:w-[170px] max-[555px]:h-[180px] flex items-center justify-center flex-col text-end rounded-[10px] transition-all delay-75 overflow-hidden relative'>
                 <div className='overflow-hidden rounded-md'>
                     {/* <Image src={item.img} width={254} className='w-full hover:scale-[1.2] transition-all delay-75' alt=''  /> */}
                     <Image src={project} alt='' className='h-[180px] w-full'/>
