@@ -10,15 +10,15 @@ import CyberSecurity from './pages/CyberSecurity'
 import UiUx from './pages/UiUx'
 
 function Projects() {
-
+    
     let [showPages, setShowPages] = useState('frontEnd')
 
     let pages = (page) => {
         if(page != showPages){
             setShowPages(page)
+            
         }
     }
-
 
     return (
 
@@ -37,16 +37,12 @@ function Projects() {
                 <button onClick={() => pages('UiUx')} className={`min-w-[60px] hover:text-[#faa000] hover:scale-[1.1] transition-all delay-75 ${showPages === 'UiUx' ? 'text-[#faa000] font-bold underline decoration-[2px]' : 'text-[#0c0c0c] font-thin'}`}>UI / UX</button>
 
             </div>
-
-            
                 {showPages === 'frontEnd' && <FrontEnd />}
                 {showPages === 'backEnd' && <BackEnd />}
                 {showPages === 'fullstack' && <FullStack />}
                 {showPages === 'mobileApplication' && <MobileApplication />}
                 {showPages === 'cyberSecurity' && <CyberSecurity />}
                 {showPages === 'UiUx' && <UiUx />}
-            
-
         </div>
     )
 }

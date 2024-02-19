@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import yousef from './img/IMG_7498.JPEG'
-import arrow from './img/Deco-img-arrow (1).svg'
+import mokhtar from './img/mokhtar.jpg'
+
 
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa6";
@@ -22,8 +23,8 @@ function TeamWork() {
             github: ''
         },
         {
-            img: yousef,
-            name: "Yousef Eid",
+            img: mokhtar,
+            name: "Mokhtar Mahmod",
             jop: 'المدير التنفيذي',
             whatsapp: '',
             facebook: '',
