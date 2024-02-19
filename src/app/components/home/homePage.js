@@ -3,7 +3,7 @@ import Image from 'next/image';
 import web  from './imgs/web-development.svg'
 function HomePage() {
   return (
-    <div id='home' className=' w-full px-[7%] flex justify-between items-center gap-10 max-[1130px]:flex-col-reverse max-[1130px]:max-[1130px]:mt-16 ' >
+    <div id='home' className=' w-full px-[7%] flex justify-between items-center gap-10 max-[1130px]:flex-col-reverse max-[1130px]:mt-16 ' >
       
         <Image src={web} alt='' width={600} />
         <div className='text-end max-[1130px]:text-center ' >
