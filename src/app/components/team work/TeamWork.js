@@ -31,42 +31,6 @@ function TeamWork() {
             linkedin: '',
             github: ''
         },
-        {
-            img: yousef,
-            name: "Yousef Eid",
-            jop: 'المدير التنفيذي',
-            whatsapp: '',
-            facebook: '',
-            linkedin: '',
-            github: ''
-        },
-        {
-            img: yousef,
-            name: "Yousef Eid",
-            jop: 'المدير التنفيذي',
-            whatsapp: '',
-            facebook: '',
-            linkedin: '',
-            github: ''
-        },
-        {
-            img: yousef,
-            name: "Yousef Eid",
-            jop: 'المدير التنفيذي',
-            whatsapp: '',
-            facebook: '',
-            linkedin: '',
-            github: ''
-        },
-        {
-            img: yousef,
-            name: "Yousef Eid",
-            jop: 'المدير التنفيذي',
-            whatsapp: '',
-            facebook: '',
-            linkedin: '',
-            github: ''
-        },
     ]
 
     return (
@@ -74,7 +38,7 @@ function TeamWork() {
             <div className='w-full flex flex-col items-center'>
                 <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
                 <h1 className='text-[#0c0c0c] text-[35px] mt-4 '>فريق ألعمل</h1>
-                <p className='text-[20px] text-[#4A5568] text-center mt-2'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
+                <p className='text-[20px] text-[#4A5568] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
             </div>
 
             <div className="w-full flex flex-wrap items-center justify-center gap-5 gap-y-16 mt-12">

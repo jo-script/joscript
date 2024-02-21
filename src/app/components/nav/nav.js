@@ -1,11 +1,12 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import logo from './icon/jologo.svg'
 import { BsList } from "react-icons/bs";
 import { HiOutlineHome } from "react-icons/hi2";
 import { LiaHandsHelpingSolid } from "react-icons/lia";
 import { GrAppsRounded } from "react-icons/gr";
+import Theme from '../theme/Theme';
 
 
 function Nav() {
@@ -17,6 +18,9 @@ function Nav() {
   const openSdeBare = () => {
      setOpenSide(!openSide)
   }
+
+
+ 
 
   return (
     <div className='w-full h-[80px] shadow-md bg-white flex items-center justify-between gap-3 px-[4%] fixed top-0 z-[444]'>
@@ -37,6 +41,7 @@ function Nav() {
 
       {/* icon list */}
       <BsList onClick={openSdeBare} className='scale-[2.3] cursor-pointer text-[#0c0c0c]  min-[1000px]:hidden' />
+      <Theme />
 
       {/* side bare */}
       <div className={`${openSide ? 'w-72' : 'w-0 p-0'} h-[89.5vh] pt-7 text-[18px] bg-white shadow-2xl absolute right-0 top-[75px] transition-all ease-in-out delay-150 overflow-hidden min-[1131px]:hidden z-[100]`} style={{direction:'rtl'}}>

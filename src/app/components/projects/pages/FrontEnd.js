@@ -43,13 +43,13 @@ function FrontEnd() {
     ]
 
   return (
-    <div className='flex items-center justify-center flex-wrap  gap-5 max-[555px]:gap-1 mt-16'>
+    <div className='flex items-center justify-center flex-wrap  gap-5 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
     {
         projects.map((item, index) => (
-            <div  key={index} className=' card max-w-[254px] h-[170px] max-[555px]:w-[170px] max-[555px]:h-[180px] flex items-center justify-center flex-col text-end rounded-[10px] transition-all delay-75 overflow-hidden relative'>
-                <div className='overflow-hidden rounded-md'>
+            <div  key={index} className={`  card bg-slate-400 h-[170px] max-[555px]:h-[180px] flex items-center justify-center flex-col text-end rounded-[10px] transition-all delay-75 overflow-hidden relative max-[673px]:w-full`}>
+                <div className='overflow-hidden rounded-md max-[673px]:w-full'>
                     {/* <Image src={item.img} width={254} className='w-full hover:scale-[1.2] transition-all delay-75' alt=''  /> */}
-                    <Image src={project} alt='' className='h-[180px] w-full'/>
+                    <Image src={project} alt='' className='h-[180px] w-full max-[673px]:w-full'/>
                 </div>
                 <div className=' w-full h-full text flex items-center justify-center flex-col text-white bg-[#0000006c] absolute top-[100%]'>
                     <p className='text-[16px] text-center mt-4 mb-4'>{item.text}</p>
