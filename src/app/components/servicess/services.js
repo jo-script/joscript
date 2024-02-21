@@ -6,7 +6,7 @@ import { Almarai } from "next/font/google";
 import front from './icons/front.svg'
 import back from './icons/back.svg'
 import fullStack from './icons/full-stack.svg'
-import mobile from './icons/mobile.svg'
+import mobile from './icons/Mobile.svg'
 
 
 const almarai = Almarai({
