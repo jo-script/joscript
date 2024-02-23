@@ -23,7 +23,7 @@ function Nav() {
  
 
   return (
-    <div className='w-full h-[80px] shadow-md bg-white flex items-center justify-between gap-3 px-[4%] fixed top-0 z-[444]'>
+    <div className='w-full h-[80px] shadow-md bg-white flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]'>
       {/* logo */}
       <a href='/' className='flex items-center justify-between gap-3'>
         <Image src={logo} alt="" width={30} height={30} />

@@ -64,3 +64,13 @@ html{
   height: 5px;
   background: #faa000;
 }
+
+#imgs::-webkit-scrollbar{
+  height: 3px;
+  background: rgba(216, 216, 216, 0.694);
+}
+
+#imgs::-webkit-scrollbar-thumb{
+  height: 5px;
+  background: #8f8f8f;
+}

@@ -1,11 +1,16 @@
 import Image from "next/image";
+
 import Nav from "./components/nav/nav";
 import HomePage from "./components/home/homePage";
+import Scenes from "./components/scenes/Scenes";
 import Services from './components/servicess/services'
-import { Rubik} from "next/font/google";
 import Projects from "./components/projects/projects";
 import TeamWork from "./components/team work/TeamWork";
 import ShowImg from "./components/show-img/ShowImg";
+import Footer from "./components/footer/Footer";
+
+// font
+import { Rubik} from "next/font/google";
 const almarai = Rubik({
   subsets:['arabic'],
   weight:'300'
@@ -19,8 +24,10 @@ export default function Home() {
       <HomePage />
       <ShowImg />
       <Services />
+      <Scenes />
       <Projects />
       <TeamWork />
+      <Footer />
 
     </div>
   );

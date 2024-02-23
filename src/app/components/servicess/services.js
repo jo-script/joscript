@@ -19,7 +19,7 @@ function Services() {
     {
       icon: front,
       title: 'Front End Development',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت'
     },
     {
       icon: back,
@@ -64,7 +64,7 @@ function Services() {
   let mediaTitle = 'max-[550px]:text-[17px] max-[712px]:text-[17px] max-[471px]:text-[15px]'
 
   return (
-    <div id='services' className='w-full bg-[#F0F0F0] px-[0%] py-24 flex flex-col items-center justify-center mt-[100px] relative '>
+    <div id='services' className='w-full bg-[#F0F0F0] py-24 flex flex-col items-center justify-center mt-[100px] relative '>
       <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
       <h1 className='text-[#0c0c0c] text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
       <p className='text-[22px] text-[#4A5568] text-center max-[500px]:text-[16px] max-[500px]:w-[70%]'> مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جواسكريبت</p>
