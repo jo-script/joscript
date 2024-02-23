@@ -26,7 +26,7 @@ function ShowImg() {
 
 
   return (
-    <div id='imgs' className='w-full h-96 flex items-center justify-center flex-nowrap overflow-auto mt-28 '>
+    <div id='imgs' className='w-full h-96 flex items-center flex-nowrap overflow-auto mt-28 px-[7%] '>
       
       {
         imgs.map((img, index) => (
