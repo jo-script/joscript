@@ -11,6 +11,10 @@ import Footer from "./components/footer/Footer";
 
 // font
 import { Rubik} from "next/font/google";
+
+import Roadmap from "./components/roadmap/page";
+
+
 const almarai = Rubik({
   subsets:['arabic'],
   weight:'300'
@@ -26,6 +30,7 @@ export default function Home() {
       <Services />
       <Scenes />
       <Projects />
+      <Roadmap />
       <TeamWork />
       <Footer />
 

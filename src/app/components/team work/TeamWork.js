@@ -34,11 +34,11 @@ function TeamWork() {
     ]
 
     return (
-        <div id='teamwork' className='w-full bg-[#F0F0F0] px-[2%] flex flex-col items-center justify-center mt-[100px] py-12 relative'>
+        <div id='teamwork' className='w-full bg-[#151c237b] px-[2%] flex flex-col items-center justify-center mt-[100px] py-12 relative'>
             <div className='w-full flex flex-col items-center'>
                 <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
-                <h1 className='text-[#0c0c0c] text-[35px] mt-4 '>فريق ألعمل</h1>
-                <p className='text-[20px] text-[#4A5568] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
+                <h1 className='text-[#eef6ff] text-[35px] mt-4 '>فريق ألعمل</h1>
+                <p className='text-[20px] text-[#9da1a7] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
             </div>
 
             <div className="w-full flex flex-wrap items-center justify-center gap-5 gap-y-16 mt-12">

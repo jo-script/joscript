@@ -1,45 +1,80 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import front from './imgs/front.svg'
-import back from './imgs/back.svg'
-import full from './imgs/full-stack.svg'
-import ui from './imgs/UI-UX.svg'
+import Image from 'next/image';
+import xx from './imgs/pexels-alisa.jpg' 
 
-let imgs = [
-  front,
-  back,
-  full,
-  full,
-  full,
-  full,
-  full,
-  full,
-  full,
-  full,
-  ui
-]
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
-function ShowImg() {
+import './style.css';
 
+// import required modules
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
-
+export default function ShowImg() {
   return (
-    <div id='imgs' className='w-full h-96 flex items-center flex-nowrap overflow-auto mt-28 px-[7%] '>
-      
-      {
-        imgs.map((img, index) => (
-          <div key={index} className=' bg-[#fafdff]  min-w-[200px] min-h-[200px] h-[250px] rounded-lg border-[1px] border-[#0000004d] rotate-[-20deg] ml-[-30px] hover:rotate-0 transition-all delay-75 hover:z-50 hover:scale-[1.2]'>
-            <Image src={img} width={200} alt='' />
-          </div>
-        ))
-      }
+    <div className='py-24'>
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={{
 
-      
-    
+            clickable: true,
+          }
+        }
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
+        className="mySwiper"
+
+        spaceBetween={30}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+
+      >
+        <SwiperSlide>
+          <Image alt='' height={200}  src={xx} className='h-[300px]' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </SwiperSlide>
+      </Swiper>
     </div>
-  )
+  );
 }
-
-export default ShowImg

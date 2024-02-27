@@ -11,27 +11,29 @@ import Theme from '../theme/Theme';
 
 function Nav() {
 
-  const linksStyle = ' px-3 h-9 text-[#0c0c0c] text-[17px]  text-center leading-9 cursor-pointer rounded-md border-[#0000] hover:border-[#fa9e008d] border-[1px] transition-all delay-75  '
+  const linksStyle = ' px-3 h-9 text-[#c4cad1] text-[17px]  text-center leading-9 cursor-pointer rounded-md border-[#0000] hover:border-[#fa9e008d] border-[1px] transition-all delay-75  '
 
   let [openSide, setOpenSide] = useState(false)
+  let [scroll, setScroll] = useState(false)
   // open side bare
   const openSdeBare = () => {
      setOpenSide(!openSide)
   }
 
-
- 
+  // window.onscroll = () => {
+  //   window.scrollY > 50 ?  setScroll(true) : setScroll(false)
+  // }
 
   return (
-    <div className='w-full h-[80px] shadow-md bg-white flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]'>
+    <div className={` ${scroll ? 'shadow-md' : 'shadow-[0]'} w-full h-[80px] border-[#848d97a0]  border-b-[1px]  bg-[#0d1117] flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
       {/* logo */}
       <a href='/' className='flex items-center justify-between gap-3'>
         <Image src={logo} alt="" width={30} height={30} />
-        <h3 className='text-[#0c0c0c] text-[25px]'>joscript</h3>
+        <h3 className='text-[#c4cad1] text-[25px]'>joscript</h3>
       </a>
 
       {/* links */}
-      <div className='w-full flex items-center gap-[3%]  max-[1000px]:hidden ' style={{ direction: 'rtl' }}>
+      <div className='w-full flex items-center gap-[3%] text-white max-[1000px]:hidden ' style={{ direction: 'rtl' }}>
         <a href="#home" className={linksStyle}>الصفحة الرئيسية</a>
         <a href="#services" className={linksStyle}><button>الخدمات</button></a>
         <a href="#projects" className={linksStyle}><button>المشاريع</button></a>
