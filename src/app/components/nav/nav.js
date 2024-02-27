@@ -6,7 +6,7 @@ import { BsList } from "react-icons/bs";
 import { HiOutlineHome } from "react-icons/hi2";
 import { LiaHandsHelpingSolid } from "react-icons/lia";
 import { GrAppsRounded } from "react-icons/gr";
-import Theme from '../theme/Theme';
+
 
 
 function Nav() {
@@ -42,16 +42,16 @@ function Nav() {
       </div>
 
       {/* icon list */}
-      <BsList onClick={openSdeBare} className='scale-[2.3] cursor-pointer text-[#0c0c0c]  min-[1000px]:hidden' />
-      <Theme />
+      <BsList onClick={openSdeBare} className='scale-[2.3] cursor-pointer text-[#b0bbc8]  min-[1000px]:hidden' />
+      
 
       {/* side bare */}
-      <div className={`${openSide ? 'w-72' : 'w-0 p-0'} h-[89.5vh] pt-7 text-[18px] bg-white shadow-2xl absolute right-0 top-[75px] transition-all ease-in-out delay-150 overflow-hidden min-[1131px]:hidden z-[100]`} style={{direction:'rtl'}}>
+      <div className={`${openSide ? 'w-72' : 'w-0 p-0'} h-[89.5vh] pt-7 text-[18px] bg-[#19202b] shadow-2xl absolute right-0 top-[75px] transition-all ease-in-out delay-150 overflow-hidden min-[1131px]:hidden z-[100]`} style={{direction:'rtl'}}>
         <nav onClick={openSdeBare}>
-          <div className="flex flex-col items-end justify-end gap-3 w-[90%] " style={{direction:'rtl'}}>
-            <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <HiOutlineHome className="scale-[2] text-[#faa000]" /> <a href="#home" className="py-2 inline-block w-full">الصفحة الرئيسية</a></p>
-            <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <LiaHandsHelpingSolid   className="scale-[2] text-[#faa000]" /> <a href="#services" className="py-2 inline-block w-full">الخدمات</a></p>
-            <p className=" flex items-center gap-5 justify-start pl-[15px] w-full px-10 hover:bg-gray-200 rounded-md transition-all delay-75"> <GrAppsRounded  className="scale-[2] text-[#faa000]" /> <a href="#projects" className="py-2 inline-block w-full">المشاريع</a></p>
+          <div className="flex flex-col items-end justify-start gap-3 pr-4 w-[90%] " style={{direction:'rtl'}}>
+            <p className=" flex items-center gap-5 justify-end pl-[15px] text-[#c4cad1] w-full px-5 hover:bg-[#3642538a] rounded-md transition-all delay-75"> <HiOutlineHome className="scale-[2] text-[#faa000]" /> <a href="#home" className="py-2 inline-block w-full">الصفحة الرئيسية</a></p>
+            <p className=" flex items-center gap-5 justify-start pl-[15px] text-[#c4cad1] w-full px-5 hover:bg-[#3642538a] rounded-md transition-all delay-75"> <LiaHandsHelpingSolid   className="scale-[2] text-[#faa000]" /> <a href="#services" className="py-2 inline-block w-full">الخدمات</a></p>
+            <p className=" flex items-center gap-5 justify-start pl-[15px] text-[#c4cad1] w-full px-5 hover:bg-[#3642538a] rounded-md transition-all delay-75"> <GrAppsRounded  className="scale-[2] text-[#faa000]" /> <a href="#projects" className="py-2 inline-block w-full">المشاريع</a></p>
           </div>
         </nav>
       </div>

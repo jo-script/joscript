@@ -8,6 +8,7 @@ import back from './icons/backend.png'
 import fullStack from './icons/fullStack.png'
 import mobile from './icons/mobile.png'
 import uiUx from './icons/ui-design.png'
+import security from './icons/cyber-security.png'
 
 
 const almarai = Almarai({
@@ -44,7 +45,7 @@ function Services() {
     },
 
     {
-      icon: front,
+      icon: security,
       title: 'Cyber Security',
       text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
     },
@@ -73,7 +74,7 @@ function Services() {
       <p className='text-[22px] text-[#9da1a7] text-center max-[500px]:text-[16px] max-[500px]:w-[70%]'> مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جو اسكريبت</p>
 
       {/* cards */}
-      <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 max-[471px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
+      <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
         {
           service.map((item, index) => (
             <div id='card' key={index} className='w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
