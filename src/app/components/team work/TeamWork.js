@@ -34,7 +34,7 @@ function TeamWork() {
     ]
 
     return (
-        <div id='teamwork' className='w-full bg-[#151c237b] px-[2%] flex flex-col items-center justify-center mt-[100px] py-12 relative'>
+        <div id='teamwork' className='w-full bg-[#151c237b] px-[2%] py-24 flex flex-col items-center justify-center mt-[100px] relative'>
             <div className='w-full flex flex-col items-center'>
                 <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
                 <h1 className='text-[#eef6ff] text-[35px] mt-4 '>فريق ألعمل</h1>

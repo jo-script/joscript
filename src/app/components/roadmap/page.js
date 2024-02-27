@@ -5,6 +5,8 @@ import Image from 'next/image'
 
 
 import front from './icons/front.png'
+import back from './icons/backend.png'
+import fullStack from './icons/fullStack.png'
 function Roadmap() {
 
 
@@ -16,24 +18,24 @@ function Roadmap() {
         <p className='text-[20px] text-[#9da1a7] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
       </div>
 
-      <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 max-[471px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
+      <div className="w-full flex flex-wrap items-center justify-center gap-5 gap-y-16 mt-12">
 
       <Link href='/components/roadmap/frontEnd'>
-          <div className='w-60 h-40 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#7cb0ff] after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] z-30 '>
+          <div className='w-60 h-40 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#3e226c61] after:backdrop-blur-sm after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] before:content-[""] before:absolute before:top-0 before:right-0  before:w-10 before:h-10 before:bg-[#610bef] before:rounded-bl-full before:transition-[all_.3s] before:z-[2] z-30 '>
             <Image src={front} width={40} alt='' />
             <h3 className='transition-[all_.3s] text-[#faa000] font-bold text-[20px]'>Front End </h3>
           </div>
         </Link>
         <Link href='/components/roadmap/frontEnd'>
-          <div className='w-60 h-40 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#7cb0ff] after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] z-30 '>
-            <Image src={front} width={40} alt='' />
-            <h3 className='transition-[all_.3s] text-[#faa000] font-bold text-[20px]'>Front End </h3>
+          <div className='w-60 h-40 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#00a7fb3a] after:backdrop-blur-sm after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] before:content-[""] before:absolute before:top-0 before:right-0  before:w-10 before:h-10 before:bg-[#00a6fb] before:rounded-bl-full before:transition-[all_.3s] before:z-[2] z-30 '>
+            <Image src={back} width={40} alt='' />
+            <h3 className='transition-[all_.3s] text-[#faa000] font-bold text-[20px]'>Back End </h3>
           </div>
         </Link>
         <Link href='/components/roadmap/frontEnd'>
-          <div className='w-60 h-40 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#7cb0ff] after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] z-30 '>
-            <Image src={front} width={40} alt='' />
-            <h3 className='transition-[all_.3s] text-[#faa000] font-bold text-[20px]'>Front End </h3>
+          <div className='w-60 h-40 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#fcba0434] after:backdrop-blur-sm after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] before:content-[""] before:absolute before:top-0 before:right-0  before:w-10 before:h-10 before:bg-[#fcba04] before:rounded-bl-full before:transition-[all_.3s] before:z-[2] z-30 '>
+            <Image src={fullStack} width={40} alt='' />
+            <h3 className='transition-[all_.3s] text-[#faa000] font-bold text-[20px]'>Full Stack </h3>
           </div>
         </Link>
 

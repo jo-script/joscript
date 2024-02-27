@@ -11,7 +11,7 @@ import Theme from '../theme/Theme';
 
 function Nav() {
 
-  const linksStyle = ' px-3 h-9 text-[#c4cad1] text-[17px]  text-center leading-9 cursor-pointer rounded-md border-[#0000] hover:border-[#fa9e008d] border-[1px] transition-all delay-75  '
+  const linksStyle = ' px-3 h-9 text-[#c4cad1] text-[17px]  text-center leading-9 cursor-pointer rounded-md border-[#0000] hover:border-[#848d9778] border-[1px] transition-all delay-75  '
 
   let [openSide, setOpenSide] = useState(false)
   let [scroll, setScroll] = useState(false)
@@ -25,7 +25,7 @@ function Nav() {
   // }
 
   return (
-    <div className={` ${scroll ? 'shadow-md' : 'shadow-[0]'} w-full h-[80px] border-[#848d97a0]  border-b-[1px]  bg-[#0d1117] flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
+    <div className={` ${scroll ? 'shadow-md' : 'shadow-[0]'} w-full h-[80px] border-[#848d9778]  border-b-[1px]  bg-[#0d1117] flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
       {/* logo */}
       <a href='/' className='flex items-center justify-between gap-3'>
         <Image src={logo} alt="" width={30} height={30} />

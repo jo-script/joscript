@@ -3,10 +3,11 @@ import Image from 'next/image';
 import "./style.css";
 import { Almarai } from "next/font/google";
 
-import front from './icons/front.svg'
-import back from './icons/back.svg'
-import fullStack from './icons/full-stack.svg'
-import mobile from './icons/Mobile.svg'
+import front from './icons/front.png'
+import back from './icons/backend.png'
+import fullStack from './icons/fullStack.png'
+import mobile from './icons/mobile.png'
+import uiUx from './icons/ui-design.png'
 
 
 const almarai = Almarai({
@@ -37,7 +38,7 @@ function Services() {
       text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
     },
     {
-      icon: front,
+      icon: uiUx,
       title: 'UI / UX Design',
       text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
     },
@@ -75,8 +76,8 @@ function Services() {
       <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 max-[471px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
         {
           service.map((item, index) => (
-            <div id='card' key={index} className='w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#92929215] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d97a0]  hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
-              <Image src={item.icon} width={50} className='h-[50px] border-[1px] border-[#FAA000] rounded-full p-1 scale-[1.2] max-[471px]:scale-[.9] max-[471px]:mb-[-8px]' alt='' />
+            <div id='card' key={index} className='w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
+              <Image src={item.icon} width={50} className='h-[50px] p-1 scale-[1.2] max-[471px]:scale-[.9] max-[471px]:mb-[-8px]' alt='' />
               <p className={`text-[21px] text-[#faa000] mt-4 font-bold ${mediaTitle} `}>{item.title}</p>
               <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75 '></p>
               <p id='text' className={`text-[18.5px] text-[#9da1a7] text-start mt-5 ${mediaText}`}>{item.text}</p>

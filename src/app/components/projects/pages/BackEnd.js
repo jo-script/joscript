@@ -8,7 +8,7 @@ const BackEnd = () => {
 
   return (
     <div id='#backEnd'>
-      <Image src={noData} alt='' />
+      <Image src={noData} alt='' className='opacity-[.7]' />
       {/* <video src={vid} controls ></video> */}
     </div>
   )
