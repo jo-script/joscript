@@ -2,28 +2,38 @@
 import React, { useState, useEffect } from 'react';
 
 function Theme() {
-    // // State to track the current theme
-    // const [isDarkMode, setIsDarkMode] = useState(() => {
-    //     // Check local storage for saved theme preference
-    //     const storedTheme = localStorage.getItem('theme');
-    //     return storedTheme ? JSON.parse(storedTheme) : false;
-    // });
+    // State to track the current theme
+    const [isDarkMode, setIsDarkMode] = useState('white');
 
-    // // useEffect to update the theme in local storage when it changes
-    // useEffect(() => {
-    //     localStorage.setItem('theme', JSON.stringify(isDarkMode));
-    // }, [isDarkMode]);
+    useEffect(() => {
+        setIsDarkMode(localStorage.getItem('joscriptTheme'))
+        if (localStorage.getItem('joscriptTheme') === '#0d1117') {
+            document.body.style.backgroundColor = '#0d1117';
+        } else {
+            document.body.style.backgroundColor = 'white';
+            document.getElementById('nav').style.background = 'white'
 
-    // // Function to toggle between light and dark mode
-    // const toggleTheme = () => {
-    //     setIsDarkMode((prevMode) => !prevMode);
-    // };
+        }
+    }, []);
+
+    const toggleTheme = () => {
+        if (localStorage.getItem('joscriptTheme') === '#0d1117') {
+            localStorage.setItem('joscriptTheme', 'white')
+            document.body.style.backgroundColor = 'white';
+            document.getElementById('nav').style.background = 'white'
+
+        } else {
+            localStorage.setItem('joscriptTheme', '#0d1117')
+            document.body.style.backgroundColor = '#0d1117';
+        }
+    };
 
     return (
         <div>
-        
+            <button onClick={toggleTheme} className='text-white'>click</button>
         </div>
     )
 }
 
 export default Theme
+

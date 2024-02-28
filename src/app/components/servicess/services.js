@@ -18,11 +18,7 @@ const almarai = Almarai({
 function Services() {
 
   const service = [
-    {
-      icon: front,
-      title: 'Front End Development',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت'
-    },
+
     {
       icon: back,
       title: 'Back End Development',
@@ -80,7 +76,8 @@ function Services() {
             <div id='card' key={index} className='w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
               <Image src={item.icon} width={50} className='h-[50px] p-1 scale-[1.2] max-[471px]:scale-[.9] max-[471px]:mb-[-8px]' alt='' />
               <p className={`text-[21px] text-[#faa000] mt-4 font-bold ${mediaTitle} `}>{item.title}</p>
-              <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75 '></p>
+              <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75'></p>
+
               <p id='text' className={`text-[18.5px] text-[#9da1a7] text-start mt-5 ${mediaText}`}>{item.text}</p>
             </div>
           ))

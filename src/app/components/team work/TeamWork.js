@@ -24,7 +24,7 @@ function TeamWork() {
         },
         {
             img: mokhtar,
-            name: "Mokhtar Mahmod",
+            name: "Mokhtar Mahmod ",
             jop: 'المدير التنفيذي',
             whatsapp: '',
             facebook: '',
@@ -41,46 +41,32 @@ function TeamWork() {
                 <p className='text-[20px] text-[#9da1a7] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
             </div>
 
-            <div className="w-full flex flex-wrap items-center justify-center gap-5 gap-y-16 mt-12">
+            <div className="w-full flex flex-wrap items-center justify-center gap-y-5 gap-x-5 mt-12">
                 {
                     teamWork.map((data, index) => (
-                        <div key={index} className=" w-[300px] h-40 bg-[#ffffff] rounded-md flex flex-col items-start justify-between p-4 hover:scale-105 cursor-default transition-all delay-75">
-                            <div className='flex items-center gap-3 '>
-                                <Image src={data.img} width={80} alt='' className='rounded-full' />
+                        <div id='cardProfile' key={index} className=" w-[290px] backdrop-blur-md bg-[#0d1117] border-[1px] border-[#848d9778]  rounded-md flex gap-3 items-start justify-between p-[7px] hover:scale-105 cursor-default transition-all delay-75">
+                            <Image src={data.img} width={100} alt='' className='rounded-md h-full' />
+                            <div className=' w-full h-[100px] flex items-start flex-col gap-3 relative'>
                                 <div className="flex flex-col justify-center h-full ">
-                                    <p className='text-[#0c0c0c] text-[18px] font-bold '>{data.name}</p>
-                                    <p className='text-[#0c0c0c] text-[18px] font-normal '>{data.jop}</p>
+                                    <p className='text-[#eef6ff] text-[20px] font-normal '>{data.name}</p>
+                                    <p className='text-[#9da1a7] text-[16px] font-normal '>{data.jop}</p>
                                 </div>
-                            </div>
-                            {/* links */}
-                            <div className='w-full text-[20px] text-[#faa000] flex items-start justify-evenly gap-4 '>
-                                <div className='w-6 hover:w-24 hover:text-green-600 px-1 rounded-full overflow-hidden cursor-pointer  flex items-center transition-all delay-75'>
-                                    <a href={data.whatsapp} className='flex items-center  gap-1'>
+                                {/* links */}
+                                <div id='links' className='w-full text-[20px] text-[#faa000] flex items-center justify-between gap-4 '>
+                                    <a href={data.whatsapp} className=' hover:text-green-600'>
                                         <IoLogoWhatsapp />
-                                        <p className='text-[14px]'>Whatsapp</p>
+                                    </a>
+
+                                    <a href={data.facebook} className=' hover:text-blue-600'>
+                                        <FaFacebook />
+                                    </a>
+                                    <a href={data.linkedin} className=' hover:text-blue-600 '>
+                                        <FaLinkedin />
+                                    </a>
+                                    <a href={data.github} className='hover:text-gray-800'>
+                                        <FaGithub />
                                     </a>
                                 </div>
-                                <div className='w-6 hover:w-24 hover:text-blue-600 px-1 rounded-full overflow-hidden cursor-pointer  flex items-center transition-all delay-75'>
-                                    <a href={data.facebook} className='flex items-center  gap-1'>
-                                    <FaFacebook />
-                                        <p className='text-[14px]'>Facebook</p>
-                                    </a>
-                                </div>
-                                <div className='w-7 hover:w-24 hover:text-blue-600 px-1 rounded-full overflow-hidden cursor-pointer  flex items-center justify-end transition-all delay-75'>
-                                    <a href={data.linkedin} className='flex items-center justify-start gap-1 flex-row-reverse'>
-                                    <FaLinkedin />
-                                        <p className='text-[14px]'>Linkedin</p>
-                                    </a>
-                                </div>
-                                <div className='w-7 hover:w-24  hover:text-gray-800 px-1 rounded-full overflow-hidden cursor-pointer  flex items-center justify-end transition-all delay-75'>
-                                    <a href={data.github} className='flex items-center flex-row-reverse gap-1'>
-                                    <FaGithub />
-                                        <p className='text-[14px]'>GitHub</p>
-                                    </a>
-                                </div>
-                                
-                                
-                                
                             </div>
                         </div>
                     ))

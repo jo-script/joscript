@@ -14,7 +14,7 @@ let date = new Date();
 
 function Footer() {
     return (
-        <div className='w-full flex flex-col items-center justify-center pt-20'>
+        <div id='footer' className='w-full flex flex-col items-center justify-center pt-20'>
 
             <div className=' flex items-center  justify-between px-[4%]'>
                 {/* logo */}

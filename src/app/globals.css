@@ -21,6 +21,7 @@
 body {
   background: #0d1117;
   padding-top: 100px;
+  transition: all .3s;
 }
 
 .light-mode {
@@ -73,6 +74,6 @@ html{
 #imgs::-webkit-scrollbar-thumb{
   height: 5px;
   background: #8f8f8f;
+  
 }
-
 
