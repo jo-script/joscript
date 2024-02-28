@@ -64,10 +64,10 @@ function Services() {
   return (
     <div className=' w-full relative '>
     
-    <div id='services' className='w-full bg-[#151c237b] backdrop-blur-md py-24 flex flex-col items-center justify-center mt-[100px] relative z-50'>
+    <div id='services' className='gray w-full bg-[#151c237b] backdrop-blur-md py-24 flex flex-col items-center justify-center mt-[100px] relative z-50'>
       <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
-      <h1 className='text-[#eef6ff]  text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
-      <p className='text-[22px] text-[#9da1a7] text-center max-[500px]:text-[16px] max-[500px]:w-[70%]'> مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جو اسكريبت</p>
+      <h1 className='title text-[#eef6ff]  text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
+      <p className='text text-[22px] text-[#9da1a7] text-center max-[500px]:text-[16px] max-[500px]:w-[70%]'> مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جو اسكريبت</p>
 
       {/* cards */}
       <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>

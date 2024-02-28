@@ -27,7 +27,7 @@ function Nav() {
   // }
 
   return (
-    <div id='nav'  className={` theme ${scroll ? 'shadow-md' : 'shadow-[0]'}  bg-[#0d1117] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
+    <div id='nav'  className={` nav ${scroll ? 'shadow-md' : 'shadow-[0]'}  bg-[#0d1117] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
       {/* logo */}
       <a href='/' className='flex items-center justify-between gap-3'>
         <Image src={logo} alt="" width={30} height={30} />
@@ -36,7 +36,7 @@ function Nav() {
       <Theme/>
 
       {/* links */}
-      <div className='w-full flex items-center gap-[3%] text-white max-[1000px]:hidden ' style={{ direction: 'rtl' }}>
+      <div id='links' className='w-full flex items-center gap-[3%] text-white max-[1000px]:hidden ' style={{ direction: 'rtl' }}>
         <a href="/" className={linksStyle}>الصفحة الرئيسية</a>
         <a href="#services" className={linksStyle}><button>الخدمات</button></a>
         <a href="#projects" className={linksStyle}><button>المشاريع</button></a>

@@ -13,11 +13,11 @@ function Roadmap() {
 
 
   return (
-    <div id='roadmap' className='w-full bg-[#0d1117] px-[2%] flex flex-col items-center justify-center py-24 relative'>
+    <div id='roadmap' className='w-full px-[2%] flex flex-col items-center justify-center py-24 relative'>
       <div className='w-full flex flex-col items-center'>
         <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
-        <h1 className='text-[#eef6ff] text-[35px] mt-4 '> المسارات التعليمية</h1>
-        <p className='text-[20px] text-[#9da1a7] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
+        <h1 className='title text-[#eef6ff] text-[35px] mt-4 '> المسارات التعليمية</h1>
+        <p className='text text-[20px] text-[#9da1a7] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>فريق ألعمل القائم على الإدارة والتدريس في مختلف المجالات البرمجية</p>
       </div>
 
       <div className="w-full flex flex-wrap items-center justify-center gap-5 gap-y-16 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2">
