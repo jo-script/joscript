@@ -2,7 +2,7 @@
 
 function FrontEnd() {
   return (
-    <div className='w-fll h-[100vh] bg-blue-400'>
+    <div className='w-fll h-[100vh]'>
       FrontEnd
     </div>
   )

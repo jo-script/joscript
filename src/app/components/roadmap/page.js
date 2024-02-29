@@ -13,7 +13,7 @@ function Roadmap() {
 
 
   return (
-    <div id='roadmap' className='w-full px-[2%] flex flex-col items-center justify-center py-24 relative'>
+    <div id='roadmap' className=' w-full px-[2%] flex flex-col items-center justify-center py-24 relative'>
       <div className='w-full flex flex-col items-center'>
         <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
         <h1 className='title text-[#eef6ff] text-[35px] mt-4 '> المسارات التعليمية</h1>
