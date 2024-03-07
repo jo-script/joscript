@@ -18,42 +18,41 @@ const almarai = Almarai({
 function Services() {
 
   const service = [
-
+    {
+      icon: front,
+      title: 'Front End Development',
+      text: 'بناء وتطوير الواجهات الاماميه لمواقع الانترنت'
+    },
     {
       icon: back,
       title: 'Back End Development',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      text: 'بناء وتطوير الواجهات الخلفيه لمواقع الانترنت'
     },
     {
       icon: fullStack,
       title: 'Full Stack Development',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      text: 'بناء وتطوير الواجهات والخلفيه والاماميه لمواقع الانترنت'
     },
     {
       icon: mobile,
       title: 'Mobile Application',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      text: ' بناء وتطوير تطبيقات الجوال لأنظمة التشغيل المختلفة'
     },
     {
       icon: uiUx,
       title: 'UI / UX Design',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      text: 'تصميم الواجهات الاماميه لمواقع الانترنت والتطبيقات'
     },
 
     {
       icon: security,
       title: 'Cyber Security',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      text: 'تأمين المواقع والتطبيقات والأنظمه من الإختراق'
     },
     {
       icon: front,
-      title: 'Front End Development',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
-    },
-    {
-      icon: front,
-      title: 'Front End Development',
-      text: 'تصميم وتطوير الواجهات الاماميه لمواقع الانترنت باستخدام احدث الادوات والتقنيات'
+      title: 'Computer basics',
+      text:'تعلم اساسيات الكمبيوتروعلم الحاسوب من الصفر'
     },
   ]
 
@@ -65,7 +64,7 @@ function Services() {
     <div className=' w-full relative '>
     
     <div id='services' className='gray w-full bg-[#151c237b] backdrop-blur-md py-24 flex flex-col items-center justify-center mt-[100px] relative z-50'>
-      <p className='bg-[#faa000] h-[3px] w-[10%] '></p>
+      <p className='bg-[#faa000] h-[3px]  w-[10%] '></p>
       <h1 className='title text-[#eef6ff]  text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
       <p className='text text-[22px] text-[#9da1a7] text-center max-[500px]:text-[16px] max-[500px]:w-[70%]'> مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جو اسكريبت</p>
 
@@ -73,22 +72,20 @@ function Services() {
       <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
         {
           service.map((item, index) => (
-            <div key={index} className='card w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.03] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
+            <div key={index} className='card w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.02] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
               <Image src={item.icon} width={50} className='h-[50px] p-1 scale-[1.2] max-[471px]:scale-[.9] max-[471px]:mb-[-8px]' alt='' />
               <p className={`text-[21px] text-[#faa000] mt-4 font-bold ${mediaTitle} `}>{item.title}</p>
               <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75'></p>
-
               <p className={`text text-[18.5px] text-[#9da1a7] text-start mt-5 ${mediaText}`}>{item.text}</p>
             </div>
           ))
         }
       </div>
-
-      {/* circle */}
-
     </div>
+      {/* circle */}
       <div className='w-[72px] h-[72px] rounded-full bg-gradient-to-r bg-[#fa9e00] absolute left-[30%]  top-[-30px] z-1 '></div>
       <div className='w-[72px] h-[72px] rounded-full bg-gradient-to-r  from-[#FAA000] to-[#FFD12D] absolute right-[30%] bottom-[-30px] z-1'></div>
+    
     </div>
   )
 }

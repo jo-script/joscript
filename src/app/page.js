@@ -13,14 +13,11 @@ import Footer from "./components/footer/Footer";
 import { Rubik} from "next/font/google";
 
 import Roadmap from "./components/roadmap/page";
-import Theme from "./components/theme/Theme";
-
 
 const almarai = Rubik({
   subsets:['arabic'],
   weight:'300'
 })
-
 
 export default function Home() {
   return (

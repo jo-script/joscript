@@ -20,7 +20,6 @@
 
 body {
   background: #0d1117;
-  padding-top: 100px;
   transition: all .3s;
 }
 
@@ -81,3 +80,11 @@ html{
   transition: all .3s;
 }
 
+
+#front{
+  background-image: url('./components/roadmap/imgs/front.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -300px;
+}

@@ -16,7 +16,6 @@ function Projects() {
     let pages = (page) => {
         if(page != showPages){
             setShowPages(page)
-            
         }
     }
 

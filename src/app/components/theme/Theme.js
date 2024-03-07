@@ -113,6 +113,7 @@ function Theme() {
             link.forEach((white) => {
                 white.style.color = '#0c0c0c'
             })
+
             // section dev
             let gray = document.querySelectorAll('.gray')
             gray.forEach((gray) => {
@@ -129,13 +130,19 @@ function Theme() {
             let text = document.querySelectorAll('.text')
             text.forEach((black) => {
                 black.style.color = '#4a5568'
-
-                // cards
-                let card = document.querySelectorAll('.card')
-                card.forEach((gray) => {
-                    gray.style.backgroundColor = 'white'
-                })
             })
+
+            // cards
+            let card = document.querySelectorAll('.card')
+            card.forEach((gray) => {
+                gray.style.backgroundColor = 'white'
+            })
+
+            let front = document.querySelectorAll('.front')
+            front.forEach((front) => {
+                front.style.backgroundColor = 'white'
+            })
+
         } else { // `black`
             localStorage.setItem('joscriptTheme', '#0d1117')
 
@@ -178,8 +185,8 @@ function Theme() {
 
     return (
         <div>
-            {!isDarkMode && <MdDarkMode onClick={toggleTheme} className='scale-[2] cursor-pointer text-[#161f2ccc] hover:bg-[#b5b5b562] p-[2px] rounded-full transition-[all_.3s]'/> }
-            { isDarkMode  && <MdOutlineLightMode onClick={toggleTheme} className='scale-[2] cursor-pointer text-white hover:bg-[#90909062] p-[2px] rounded-full transition-[all_.3s]'/> }
+            {!isDarkMode && <MdDarkMode title='Dark Mode' onClick={toggleTheme} className='link scale-[2] cursor-pointer text-[#161f2ccc] hover:bg-[#b5b5b562] p-[2px] rounded-full transition-[all_.3s] ' />}
+            {isDarkMode && <MdOutlineLightMode title='Light Mode' onClick={toggleTheme} className='link scale-[2] cursor-pointer text-white hover:bg-[#90909062] p-[2px] rounded-full transition-[all_.3s]' />}
         </div>
     )
 }
