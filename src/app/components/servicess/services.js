@@ -52,7 +52,12 @@ function Services() {
     {
       icon: front,
       title: 'Computer basics',
-      text:'تعلم اساسيات الكمبيوتروعلم الحاسوب من الصفر'
+      text:'تعلم اساسيات الكمبيوتر وعلم الحاسوب من الصفر'
+    },
+    {
+      icon: front,
+      title: 'Programming for children',
+      text:'تعليم البرمجة للأطفال لجميع الأعمار والمستويات'
     },
   ]
 

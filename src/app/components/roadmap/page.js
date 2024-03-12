@@ -54,12 +54,6 @@ function Roadmap() {
         </Link>
 
       </div>
-
-      <div className='w-[72px] h-[72px] rounded-full bg-gradient-to-r from-[#FAA000] to-[#FFD12D]  absolute left-[30%]  top-[50%] '></div>
-      <div className='w-[72px] h-[72px] rounded-full bg-gradient-to-r from-[#FAA000] to-[#FFD12D]  absolute right-[35%]  bottom-[35px] '></div>
-
-
-
     </div>
   )
 }

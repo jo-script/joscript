@@ -15,7 +15,7 @@ function HomePage() {
         <br />
         <br />
         <div className='flex items-center justify-end gap-7'>
-          <button className='w-[140px] h-[45px] text-[19px] text-[#faa000]  hover:bg-[#faa000] border-[1px] border-[#faa000] text-center leading-[40px] rounded-md hover:text-[#0c0c0c] shadow-[0_0_8px_0_#FA000] hover:shadow-[#fa9e0063] transition-all delay-75 '><a href="https://docs.google.com/forms/d/e/1FAIpQLSfi2nVAwS0sadGyZHvUbsKmfyY0CeJnxMqsR8GFbiPdiVrKrg/viewform?pli=1&pli=1" target='_blank'>سجل معنا</a>  </button>
+          <button className='w-[140px] h-[45px] text-[19px] text-[#faa000]  hover:bg-[#faa000] border-[1px] border-[#faa000] text-center leading-[40px] rounded-md hover:text-[#0c0c0c] shadow-[0_0_8px_0_#FA000] hover:shadow-[#fa9e0063] transition-all delay-75 '><a href="https://forms.microsoft.com/r/ELP7xVcXbS" target='_blank'>سجل معنا</a>  </button>
           <button className='w-[140px] h-[45px] text-[18px]  bg-[#faa000] text-center leading-[40px] rounded-md text-[#0c0c0c] shadow-[0_0_8px_0_#FA000] hover:shadow-[#fa9e00] transition-all delay-75 '><a href="https://www.facebook.com/profile.php?id=61553287433285&locale=ar_AR" target='_blank'>تواصل معنا</a>  </button>
         </div>
       </div>

@@ -17,7 +17,7 @@ function FrontEnd() {
     {
         projects.map((item, index) => (
             <div  key={index} className={`  card bg-slate-400 h-[170px] max-[555px]:h-[180px] flex items-center justify-center flex-col text-end rounded-[10px] transition-all delay-75 overflow-hidden relative max-[673px]:w-full`}>
-                <iframe src={item.src} className='w-full h-full' scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe src={item.src} className='w-full h-full' allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
         ))
     }

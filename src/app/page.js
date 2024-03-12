@@ -29,7 +29,7 @@ export default function Home() {
       <Scenes />
       <Projects />
       <Roadmap />
-      <TeamWork />
+      {/* <TeamWork /> */}
       <Footer />
     </div>
   );

@@ -19,17 +19,10 @@ function Nav() {
 
   let [openSide, setOpenSide] = useState(false)
   let [moreOption, setMoreOption] = useState(false)
-  let [backOption, setBackOption] = useState(false)
-
 
   // open side bare
   const openSdeBare = () => setOpenSide(!openSide)
 
-  // show div more links on click
-  let showMore = () => setMoreOption(!moreOption)
-
-  // close div more option with out mouse
-  let closeMoreOption = () => setMoreOption(!moreOption)
 
   return (
     <div id='nav' className={` nav  bg-[#0d1117] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
@@ -48,18 +41,8 @@ function Nav() {
           <a href="#services" className={linksStyle}><button className='link'>الخدمات</button></a>
           <a href="#projects" className={linksStyle}><button className='link'>المشاريع</button></a>
           <a href="#roadmap" className={linksStyle}><button className='link'>مسارات التعلم</button></a>
-          <div onClick={showMore} className={`${linksStyle} relative`} >
-            <p className='link'>ألمزيد</p>
-            <IoIosArrowDown className='link' />
+          <a href="#footer" className={linksStyle}><button className='link'>التواصل</button></a>
 
-            {/* more option */}
-            <div className={`card ${moreOption ? ' h-36' : 'h-0'} ${backOption ? ' h-0 ' : 'h-0'} w-48 bg-[#0d1117] shadow-md shadow-[#0d111715] border-[#848d974c] border-[1px] flex flex-col items-center justify-center gap-3 absolute top-[155%] left-0 transition-[all_.3s] overflow-hidden z-20`}>
-              <a href="#teamwork" className='link w-[80%] py-1 rounded-md hover:bg-[#d5d5d550]'>فريق العمل</a>
-              <a href="#teamwork" className='link w-[80%] py-1 rounded-md hover:bg-[#d5d5d550]'>فريق العمل</a>
-              <a href="#teamwork" className='link w-[80%] py-1 rounded-md hover:bg-[#d5d5d550]'>فريق العمل</a>
-            </div>
-
-          </div>
         </div>
 
 
