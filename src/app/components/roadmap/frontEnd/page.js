@@ -1,8 +1,10 @@
+import Footer from "../../footer/Footer"
+import Image from "next/image"
 
 
 function FrontEnd() {
   return (
-    <div className='front w-fll bg-white' style={{ direction: 'rtl' }}>
+    <div className='front w-fll bg-white' >
       <div id="front" className="w-full h-72 bg-slate-400 flex items-center justify-center">
         <h1 className="text-white font-bold text-[50px]">FRONT END</h1>
       </div>
@@ -111,9 +113,65 @@ function FrontEnd() {
             <br />
             بكل بساطه الموقع من غيرها شكل بس مش اكتر
           </p>
+          <br />
+          <br />
+
+          <p className="text-[19px] text-[#0c0c0c]">
+            ودي كده اللغات الأساسيه في تصميم المواقع
+            <br />
+            عندك بقي شوية أدوات ومكتبات وظيفتها إنها تساعدك وتسهل عليك
+            <br />
+            ودي طبعا معتمده بالكامل علي الاساس يعني مينفعش تتعلمها غير لما تعدي علي اللغه الاساسيه بتاعتها
+          </p>
+          <br />
+          <br />
+
+          <p className="text-[19px] text-[#0c0c0c]">
+            أول حاجه عندك مكتبات خاصة بالغة CSS
+            <br />
+            ومن أشهرهم  <span className="text-[#faa000] font-bold">Bootstrap</span>  و <span className="text-[#faa000] font-bold">Tailwind</span>
+            <br />
+            طبعا في غيرهم بس دول أكثر شيوعا
+            <br />
+            ودول برضو بينفزو نفس وظيفة اللغة من الألوان والأشكال وكل شئ يخص شكل الموقع وتخطيطه
+            <br />
+            بس بيضيفو ليك ميزه كويسه وانها بتسهل عليك وبتختصر عليك وقت ومجهود
+            <br />
+            عن طريق انها بتديك حجات جاهزه تبني بيها الموقع بدل متقعد كل مره تبني من الصفر
+            <br />
+            ‏دي طبعا الفكره العامه ليهم وبينهم اختلاف شويه
+          </p>
+          <br />
+          <br />
+
+          <p className="text-[19px] text-[#0c0c0c]">
+            تاني حاجه وهيا
+            <br />
+            الـ  <span className="text-[#faa000] font-bold">React.js</span> و <span className="text-[#faa000] font-bold">Vue.js</span> و <span className="text-[#faa000] font-bold">Angular.js</span>
+            <br />
+            التلاته إطارات عمل للغة javascript
+            <br />
+            فكرتهم في العموم واحده ومتشابهه لحد كبير
+            <br />
+
+            <br />ووظيفتهم برضو يسهلو عليك ويختصرو الوقت والمجهود  في استخدام لغة javascript داخل الموقع
+            نظراً لأنها لغة مهمه جدا وشغلها كتير
+            <br />
+            والموقع بيعتمد عليها بشكل أساسي
+            <br />
+            طبعا مهمين جداً ومطلوبين بشكل أساسي في الشركات لإن كل الشغل حاليًا معتمد عليهم
+            <br />
+            ولا يكاد موقع يخلو من إطار عمل فيهم
+          </p>
+          <br />
+          <br />
+          <br />
         </div>
       </div>
 
+    
+    <Footer />
+    
 
     </div>
   )
