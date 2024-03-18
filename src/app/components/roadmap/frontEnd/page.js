@@ -14,7 +14,7 @@ function FrontEnd() {
       </div>
 
       <div style={{ direction: 'rtl' }} className=" w-full pt-14 px-[10%] flex flex-col items-start justify-start gap-5">
-        <div className="text-[#faa000] text-[30px] font-bold ">
+        <div className="text-[#faa000] max-[500px]:text-[25px] text-[30px] font-bold ">
           <span>أولاً:  </span>
           <span>     ماهوا الـ Front End ؟ </span>
         </div>

@@ -20,7 +20,7 @@ function Roadmap() {
         <p className='text text-[20px] text-[#9da1a7] text-center mt-2 max-[500px]:text-[16px] max-[500px]:w-[78%]'>مسارات التعلم للمجالات البرمجية المختلفة</p>
       </div>
 
-      <div className="w-full flex flex-wrap items-center justify-center gap-5 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2">
+      {/* <div className="w-full flex flex-wrap items-center justify-center gap-5 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2">
 
         <Link href='/components/roadmap/frontEnd' className='w-60 h-40 max-[673px]:w-full'>
           <div className=' w-full h-full flex flex-col items-center justify-center gap-2 rounded-md cursor-pointer bg-[#daf7ff31] border-[1px] border-[#6c6c6c33] backdrop-blur-md p-5 overflow-hidden relative after:content-[""] after:absolute after:top-0 after:right-0  after:w-10 after:h-10 after:bg-[#3e226c61] after:backdrop-blur-sm after:rounded-bl-full hover:text-white hover:after:w-full hover:after:h-full hover:after:rounded-none after:transition-[all_.3s] after:z-[-1] before:content-[""] before:absolute before:top-0 before:right-0  before:w-10 before:h-10 before:bg-[#610bef] before:rounded-bl-full before:transition-[all_.3s] before:z-[2] z-30 '>
@@ -53,7 +53,8 @@ function Roadmap() {
           </div>
         </Link>
 
-      </div>
+      </div> */}
+      <Maps />
     </div>
   )
 }

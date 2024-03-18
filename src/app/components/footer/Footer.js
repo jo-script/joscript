@@ -25,24 +25,24 @@ function Footer() {
                 <div>
                     <div className=" space-y-2 flex flex-col items-start">
                         <h3 className="text-[#f0f0f0da] text-lg font-semibold">Contact us</h3>
-                        <a href='tel:+201032734738' className="text-sm text-gray-400 flex gap-2 items-center"> <IoMdCall /> 01032734738</a>
-                        <a href='mailto:joscript.js@gmail.com' className="text-sm text-gray-400 flex gap-2 items-center"> <IoMdMailOpen /> joscript.js@gmail.com</a>
+                        <a href='tel:+201032734738' className="text-[16px] text-gray-400 flex gap-2 items-center hover:text-gray-200 hover:underline"> <IoMdCall /> 01032734738</a>
+                        <a href='mailto:joscript.js@gmail.com' className="text-[16px] text-gray-400 flex gap-2 items-center hover:text-gray-200 hover:underline"> <IoMdMailOpen /> joscript.js@gmail.com</a>
                     </div>
                 </div>
                 <div className="space-y-4">
                     <div className=" space-y-2 text-start ">
                         <h3 className="text-[#f0f0f0da] text-lg font-semibold">Follow us</h3>
                         <div className="flex flex-col justify-start gap-1 text-gray-400">
-                            <a href="https://facebook.com/joscript1" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px]">
+                            <a href="https://facebook.com/joscript1" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px] hover:underline hover:text-gray-200">
                                 <FaFacebook /> Facebook
                             </a>
-                            <a href="https://wa.me/+201032734738" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px]">
+                            <a href="https://wa.me/+201032734738" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px] hover:underline hover:text-gray-200">
                                 <IoLogoWhatsapp /> Whatsapp
                             </a>
-                            <a href="https://instagram.com/joscript1" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px]">
+                            <a href="https://instagram.com/joscript1" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px] hover:underline hover:text-gray-200">
                                 <RiInstagramFill /> Instagram
                             </a>
-                            <a href="https://www.youtube.com/@jo-script" target='_blank' className="flex mr-3 items-center gap-2 justify-center text-gray-400 text-[16px]">
+                            <a href="https://www.youtube.com/@jo-script" target='_blank' className="flex mr-3 items-center gap-2 justify-center text-gray-400 text-[16px] hover:underline hover:text-gray-200">
                                 <AiFillYoutube /> Youtube
                             </a>
                         </div>
@@ -52,16 +52,16 @@ function Footer() {
                     <div className="space-y-2 ">
                         <h3 className="text-[#f0f0f0da] text-lg font-semibold">Quick Links</h3>
                         <nav className="  gap-2 text-sm flex items-start justify-start flex-col  ">
-                            <Link className="text-gray-500 dark:text-gray-400 hover:underline" href="#">
+                            <Link className="text-[16px] text-gray-500 dark:text-gray-400 hover:underline hover:text-gray-200" href="#">
                                 About Us
                             </Link>
-                            <Link className="text-gray-500 dark:text-gray-400 hover:underline" href="#">
+                            <Link className="text-[16px] text-gray-500 dark:text-gray-400 hover:underline hover:text-gray-200" href="#">
                                 Contact Us
                             </Link>
-                            <Link className="text-gray-500 dark:text-gray-400 hover:underline" href="#">
+                            <Link className="text-[16px] text-gray-500 dark:text-gray-400 hover:underline hover:text-gray-200" href="#">
                                 Terms & Conditions
                             </Link>
-                            <Link className="text-gray-500 dark:text-gray-400 hover:underline" href="#">
+                            <Link className="text-[16px] text-gray-500 dark:text-gray-400 hover:underline hover:text-gray-200" href="#">
                                 Privacy Policy
                             </Link>
                         </nav>
