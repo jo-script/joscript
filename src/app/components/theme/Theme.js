@@ -24,9 +24,9 @@ function Theme() {
 
     useEffect(() => {
         setIsDarkMode(localStorage.getItem('joscriptTheme'))
-        if (localStorage.getItem('joscriptTheme') === '#0d1117') {
-            document.body.style.backgroundColor = '#0d1117';
-            document.querySelector('.nav').style.background = '#0d1117'
+        if (localStorage.getItem('joscriptTheme') === '#111827') {
+            document.body.style.backgroundColor = '#111827';
+            document.querySelector('.nav').style.background = '#111827'
             setIsDarkMode(true)
 
             // links
@@ -38,7 +38,7 @@ function Theme() {
             // section dev
             let gray = document.querySelectorAll('.gray')
             gray.forEach((gray) => {
-                gray.style.backgroundColor = '#151c237b'
+                gray.style.backgroundColor = '#1d25367a'
             })
 
             // title
@@ -56,7 +56,7 @@ function Theme() {
             // cards
             let card = document.querySelectorAll('.card')
             card.forEach((gray) => {
-                gray.style.backgroundColor = '#0d1117'
+                gray.style.backgroundColor = '#111827'
             })
 
 
@@ -100,7 +100,7 @@ function Theme() {
 
     const toggleTheme = () => {
 
-        if (localStorage.getItem('joscriptTheme') === '#0d1117') {
+        if (localStorage.getItem('joscriptTheme') === '#111827') {
             localStorage.setItem('joscriptTheme', 'white')
 
             setIsDarkMode(false)
@@ -144,10 +144,10 @@ function Theme() {
             })
 
         } else { // `black`
-            localStorage.setItem('joscriptTheme', '#0d1117')
+            localStorage.setItem('joscriptTheme', '#111827')
 
-            document.body.style.backgroundColor = '#0d1117';
-            document.querySelector('.nav').style.background = '#0d1117'
+            document.body.style.backgroundColor = '#111827';
+            document.querySelector('.nav').style.background = '#111827'
             setIsDarkMode(true)
 
 
@@ -160,7 +160,7 @@ function Theme() {
             // section dev
             let gray = document.querySelectorAll('.gray')
             gray.forEach((gray) => {
-                gray.style.backgroundColor = '#151c237b'
+                gray.style.backgroundColor = '#1d25367a'
             })
 
             // title
@@ -178,7 +178,7 @@ function Theme() {
             // cards
             let card = document.querySelectorAll('.card')
             card.forEach((gray) => {
-                gray.style.backgroundColor = '#0d1117'
+                gray.style.backgroundColor = '#111827'
             })
         }
     };

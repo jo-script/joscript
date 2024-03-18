@@ -1,12 +1,16 @@
 import Footer from "../../footer/Footer"
 import Image from "next/image"
+import { Maps } from "../page"
+import { MdChevronLeft } from "react-icons/md";
+
 
 
 function FrontEnd() {
   return (
-    <div className='front w-fll bg-white' >
-      <div id="front" className="w-full h-72 bg-slate-400 flex items-center justify-center">
-        <h1 className="text-white font-bold text-[50px]">FRONT END</h1>
+    <div className='front w-fll bg-white'  >
+      <div id="front" className="w-full h-72 bg-slate-400 flex flex-col items-center justify-center gap-4">
+        <h1 className="text-white font-bold text-[50px] tracking-widest">FRONT END </h1>
+        <button className='w-[250px] h-[45px] text-[19px] text-[#ffffff]  hover:bg-[#ffffff] border-[1px] border-[#ffffff9c] text-center leading-[40px] rounded-md hover:text-[#0c0c0c] shadow-[0_0_8px_0_#FA000] transition-all delay-75 '><a href="https://forms.microsoft.com/r/ELP7xVcXbS" target='_blank'>سجل معنا</a>  </button>
       </div>
 
       <div style={{ direction: 'rtl' }} className=" w-full pt-14 px-[10%] flex flex-col items-start justify-start gap-5">
@@ -164,14 +168,18 @@ function FrontEnd() {
             ولا يكاد موقع يخلو من إطار عمل فيهم
           </p>
           <br />
-          <br />
-          <br />
         </div>
-      </div>
 
-    
-    <Footer />
-    
+        <button className=' flex items-center gap-1 w-[160px] h-[45px] underline text-[19px] hover:text-blue-700  text-center leading-[40px] rounded-md transition-all delay-75 '><a href="/"> الصفحة الرئيسية </a>  <MdChevronLeft className="mt-1" /></button>
+
+      </div>
+      <div className="w-full flex items-center justify-center">
+        <Maps />
+      </div>
+      <br />
+      <br />
+
+      <Footer />
 
     </div>
   )

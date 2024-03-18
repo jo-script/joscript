@@ -25,7 +25,7 @@ function Nav() {
 
 
   return (
-    <div id='nav' className={` nav  bg-[#0d1117] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
+    <div id='nav' className={` nav  bg-[#111827] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
       {/* logo */}
       <a href='/' className='flex items-center justify-between gap-3'>
         <Image src={logo} alt="" width={30} height={30} />

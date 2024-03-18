@@ -9,6 +9,8 @@ import fullStack from './icons/fullStack.png'
 import mobile from './icons/mobile.png'
 import uiUx from './icons/ui-design.png'
 import security from './icons/cyber-security.png'
+import pc from './icons/pc.png'
+import child from './icons/child.png'
 
 
 const almarai = Almarai({
@@ -50,12 +52,12 @@ function Services() {
       text: 'تأمين المواقع والتطبيقات والأنظمه من الإختراق'
     },
     {
-      icon: front,
+      icon: pc,
       title: 'Computer basics',
       text:'تعلم اساسيات الكمبيوتر وعلم الحاسوب من الصفر'
     },
     {
-      icon: front,
+      icon: child,
       title: 'Programming for children',
       text:'تعليم البرمجة للأطفال لجميع الأعمار والمستويات'
     },
@@ -68,7 +70,7 @@ function Services() {
   return (
     <div className=' w-full relative '>
     
-    <div id='services' className='gray w-full bg-[#151c237b] backdrop-blur-md py-24 flex flex-col items-center justify-center mt-[100px] relative z-50'>
+    <div id='services' className='gray w-full bg-[#1d25367a] backdrop-blur-md py-24 flex flex-col items-center justify-center mt-[100px] relative z-50'>
       <p className='bg-[#faa000] h-[3px]  w-[10%] '></p>
       <h1 className='title text-[#eef6ff]  text-[35px] mt-4 '>الخدمات التي نقدمها</h1>
       <p className='text text-[22px] text-[#9da1a7] text-center max-[500px]:text-[16px] max-[500px]:w-[70%]'> مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جو اسكريبت</p>
@@ -77,7 +79,7 @@ function Services() {
       <div className='flex items-center justify-center  flex-wrap gap-5 max-[712px]:gap-1 mt-16 max-[673px]:grid max-[673px]:grid-cols-2 place-items-center max-[673px]:w-[95%] max-[673px]:gap-2'>
         {
           service.map((item, index) => (
-            <div key={index} className='card w-[330px] backdrop-blur-sm max-h-[250px] bg-[#0d1117] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.02] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
+            <div key={index} className='card w-[330px] backdrop-blur-sm max-h-[250px] bg-[#111827] rounded-[10px] shadow-[#9292920c] shadow-lg px-4 py-9 flex flex-col justify-center cursor-default border-[1px] border-[#848d9778]  hover:scale-[1.02] transition-all delay-75 max-[712px]:w-[220px]  max-[550px]:h-auto  max-[471px]:h-[200px] max-[673px]:w-full'>
               <Image src={item.icon} width={50} className='h-[50px] p-1 scale-[1.2] max-[471px]:scale-[.9] max-[471px]:mb-[-8px]' alt='' />
               <p className={`text-[21px] text-[#faa000] mt-4 font-bold ${mediaTitle} `}>{item.title}</p>
               <p id='line' className='bg-[#faa000] h-[.5px] w-[30%] transition-all delay-75'></p>

@@ -20,18 +20,18 @@ let date = new Date();
 
 function Footer() {
     return (
-        <footer className=" bg-gray-100 dark:bg-gray-900 pt-12 ">
-            <div className=" flex flex-wrap items-start justify-between gap-10 px-[4%] mb-12 max-[560px]:items-center max-[560px]:flex-col">
+        <footer id='footer' className=" bg-gray-100 dark:bg-[#151e31] pt-12 ">
+            <div className=" flex flex-wrap items-start justify-between gap-6 px-[4%] mb-12 max-[560px]:items-start ">
                 <div>
                     <div className=" space-y-2 flex flex-col items-start">
-                        <h3 className="text-[#f0f0f0da] text-lg font-semibold">اتصل بنا</h3>
+                        <h3 className="text-[#f0f0f0da] text-lg font-semibold">Contact us</h3>
                         <a href='tel:+201032734738' className="text-sm text-gray-400 flex gap-2 items-center"> <IoMdCall /> 01032734738</a>
                         <a href='mailto:joscript.js@gmail.com' className="text-sm text-gray-400 flex gap-2 items-center"> <IoMdMailOpen /> joscript.js@gmail.com</a>
                     </div>
                 </div>
                 <div className="space-y-4">
                     <div className=" space-y-2 text-start ">
-                        <h3 className="text-[#f0f0f0da] text-lg font-semibold">تابعنا</h3>
+                        <h3 className="text-[#f0f0f0da] text-lg font-semibold">Follow us</h3>
                         <div className="flex flex-col justify-start gap-1 text-gray-400">
                             <a href="https://facebook.com/joscript1" target='_blank' className="  flex items-center gap-2 justify-center text-gray-400 text-[16px]">
                                 <FaFacebook /> Facebook
@@ -49,9 +49,9 @@ function Footer() {
                     </div>
                 </div>
                 <div className="space-y-4">
-                    <div className="space-y-2 text-center lg:text-left">
+                    <div className="space-y-2 ">
                         <h3 className="text-[#f0f0f0da] text-lg font-semibold">Quick Links</h3>
-                        <nav className="flex flex-col gap-2 text-sm">
+                        <nav className="  gap-2 text-sm flex items-start justify-start flex-col  ">
                             <Link className="text-gray-500 dark:text-gray-400 hover:underline" href="#">
                                 About Us
                             </Link>
@@ -73,7 +73,7 @@ function Footer() {
 
             </div>
             <div className="h-[80px] text-[16px] text-gray-500 lg:text-left  lg:col-start-2 flex lg:flex-row items-center justify-center border-t-[1px] border-[#ffffff34]">
-                joscript©{date.getFullYear()} Acme Inc. All rights reserved.
+                joscript©{date.getFullYear()} All rights reserved.
             </div>
 
         </footer>
