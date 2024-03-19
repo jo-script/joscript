@@ -1,13 +1,26 @@
 'use client'
 
+import { useEffect, useState } from "react";
 import Footer from "../../footer/Footer"
 import { Maps } from "../page"
 import { MdChevronLeft } from "react-icons/md";
 
-
 function BackEnd() {
+
+  let [mode, setMode] = useState('white')
+  let [color, setColor] = useState('white')
+
+  useEffect(() => {
+    if (localStorage.getItem('joscriptTheme') === '#111827') {
+      setMode('#111827')
+      setColor('#eef6ff')
+    } else {
+      setMode('white')
+      setColor('#0c0c0c')
+    }
+  }, [])
   return (
-    <div className="card bg-white">
+    <div className="card bg-[#111827] mt-20" style={{ backgroundColor: mode }} >
       <div id="back" className="w-full h-72 bg-slate-400 flex flex-col items-center justify-center gap-4">
         <h1 className="text-white font-bold text-[50px] tracking-widest">BACK END </h1>
         <button className='w-[250px] h-[45px] text-[19px] text-[#ffffff]  hover:bg-[#ffffff] border-[1px] border-[#ffffff9c] text-center leading-[40px] rounded-md hover:text-[#0c0c0c] shadow-[0_0_8px_0_#FA000] transition-all delay-75 '><a href="https://forms.microsoft.com/r/ELP7xVcXbS" target='_blank'>سجل معنا</a>  </button>
@@ -19,7 +32,7 @@ function BackEnd() {
           <span>     ماهوا الـ Back End ؟ </span>
         </div>
 
-        <p className="text-[19px] text-[#0c0c0c]">
+        <div className="link text-[19px] text-[#0c0c0c]" style={{color:color}}>
           الباك اند هو بناء وتطوير الواجهة الخلفية لمواقع الانترنت
           <br />
           الباك اند بيتعامل مع كل شئ لا يمكن للمستخدم
@@ -30,9 +43,9 @@ function BackEnd() {
           وزي طرق الدفع علي الإنترنت وغيرها من العمليات
           <br />
           اللي بتكون خلف الكواليس في عالم الإنترنت
-        </p>
+        </div>
 
-        <p className="text-[19px] text-[#0c0c0c]">
+        <p className="link text-[19px] text-[#0c0c0c]" style={{color:color}}>
           يعني مثلا زي فيسبوك
           <br />
           من غير باك اند مكنتش هتعرف تعمل حساب جديد
@@ -49,7 +62,7 @@ function BackEnd() {
         <div className="text-[#faa000] text-[30px] max-[500px]:text-[25px] font-bold ">
           <span>لغات تعلم الـ Back End </span>
         </div>
-        <p className="text-[19px] text-[#0c0c0c]">
+        <div className="link text-[19px] text-[#0c0c0c]" style={{color:color}}>
           فيه اكتر من لغة برمجة تقدر تتعلمهم علشان تكون باك اند
           زي
           <br />
@@ -60,13 +73,13 @@ function BackEnd() {
           <br />
           <br />
 
-        <p className="p-4 bg-red-100 w-full rounded-md">
-        <span className="font-bold">ملحوظة:</span>  كل المسارت اللي هيتم ذكرها بتنفذ نفس الوظيفه يعني تعلم مسار واحد بس يكفي
-          مش لازم تتعلمهم كلهم
-        </p>
-        </p>
+          <p className="p-4 bg-red-100 w-full rounded-md text-[#0c0c0c]">
+            <span className="font-bold ">ملحوظة:</span>  كل المسارت اللي هيتم ذكرها بتنفذ نفس الوظيفه يعني تعلم مسار واحد بس يكفي
+            مش لازم تتعلمهم كلهم
+          </p>
+        </div>
 
-        <p className="text-[19px] text-[#0c0c0c] ">
+        <div className="link text-[19px] text-[#0c0c0c] "  style={{color:color}}>
 
           <p className="font-bold">javascript </p>
           Node.js <br />
@@ -90,9 +103,9 @@ function BackEnd() {
           JDBC (Java Database Connectivity) <br />
           Spring Security <br />
           Quartz Scheduler <br />
-        </p>
+        </div>
 
-        <button className=' flex items-center gap-1 w-[160px] h-[45px] underline text-[19px] hover:text-blue-700  text-center leading-[40px] rounded-md transition-all delay-75 '><a href="/"> الصفحة الرئيسية </a>  <MdChevronLeft className="mt-1" /></button>
+        <button className='link flex items-center gap-1 w-[160px] h-[45px] underline text-[19px] text-center hover:text-blue-700 leading-[40px] rounded-md transition-all delay-75 '><a href="/" className="hover:text-blue-700"> الصفحة الرئيسية </a>  <MdChevronLeft className="mt-1" /></button>
 
       </div>
 

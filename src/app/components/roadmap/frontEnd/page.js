@@ -1,13 +1,29 @@
+'use client'
 import Footer from "../../footer/Footer"
 import Image from "next/image"
 import { Maps } from "../page"
 import { MdChevronLeft } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 
 
 function FrontEnd() {
+
+  let [mode, setMode] = useState('white')
+  let [color, setColor] = useState('white')
+
+  useEffect(() => {
+    if (localStorage.getItem('joscriptTheme') === '#111827') {
+      setMode('#111827')
+      setColor('#eef6ff')
+    } else {
+      setMode('white')
+      setColor('#0c0c0c')
+    }
+  }, [])
+
   return (
-    <div className='front w-fll bg-white'  >
+    <div className='card front w-fll bg-[#111827] mt-20' style={{ backgroundColor: mode }}>
       <div id="front" className="w-full h-72 bg-slate-400 flex flex-col items-center justify-center gap-4">
         <h1 className="text-white font-bold text-[50px] tracking-widest">FRONT END </h1>
         <button className='w-[250px] h-[45px] text-[19px] text-[#ffffff]  hover:bg-[#ffffff] border-[1px] border-[#ffffff9c] text-center leading-[40px] rounded-md hover:text-[#0c0c0c] shadow-[0_0_8px_0_#FA000] transition-all delay-75 '><a href="https://forms.microsoft.com/r/ELP7xVcXbS" target='_blank'>سجل معنا</a>  </button>
@@ -19,7 +35,7 @@ function FrontEnd() {
           <span>     ماهوا الـ Front End ؟ </span>
         </div>
 
-        <div className="text-[19px] text-[#0c0c0c]">
+        <div className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
           بكل ‏بساطه الـ front_end ده الشخص المسؤل عن تصميم وبناء الواجهة الأمامية لمواقع الإنترنت
           <br />
           يعني اي موقع على الإنترنت ليه واجهة حضرتك بتتعامل معها وبتشوفها لما تفتح الموقع
@@ -59,7 +75,7 @@ function FrontEnd() {
 
         <div>
           <p className="font-bold text-[#faa000] text-[23px]">1- HTML </p>
-          <p className="text-[19px] text-[#0c0c0c]">
+          <p className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
             ودي اللغه المسؤله عن وضع العناصر داخل الصفحه
             زي النصوص والأزرار والصور
             <br />
@@ -75,7 +91,7 @@ function FrontEnd() {
 
         <div>
           <p className="font-bold text-[#faa000] text-[23px]">2- CSS </p>
-          <p className="text-[19px] text-[#0c0c0c]">
+          <p className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
             ودي اللغة المسؤولة عن تنسيق العناصر
             <br />
             بالبلدي كده تقدر تقول انها الديكور للموقع بتاعك
@@ -94,7 +110,7 @@ function FrontEnd() {
 
         <div>
           <p className="font-bold text-[#faa000] text-[23px]">3- Javascript </p>
-          <p className="text-[19px] text-[#0c0c0c]">
+          <p className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
             ودي بقي اللي من غيرها هيكون الموقع بتاعك شكل بس مش هتقدر تستفيد منو
             <br />
             لانها اللغه اللي بتخلي الموقع بتاعك دينمك متفاعل
@@ -120,7 +136,7 @@ function FrontEnd() {
           <br />
           <br />
 
-          <p className="text-[19px] text-[#0c0c0c]">
+          <p className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
             ودي كده اللغات الأساسيه في تصميم المواقع
             <br />
             عندك بقي شوية أدوات ومكتبات وظيفتها إنها تساعدك وتسهل عليك
@@ -130,7 +146,7 @@ function FrontEnd() {
           <br />
           <br />
 
-          <p className="text-[19px] text-[#0c0c0c]">
+          <p className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
             أول حاجه عندك مكتبات خاصة بالغة CSS
             <br />
             ومن أشهرهم  <span className="text-[#faa000] font-bold">Bootstrap</span>  و <span className="text-[#faa000] font-bold">Tailwind</span>
@@ -148,7 +164,7 @@ function FrontEnd() {
           <br />
           <br />
 
-          <p className="text-[19px] text-[#0c0c0c]">
+          <p className="link text-[19px] text-[#0c0c0c]" style={{ color: color }}>
             تاني حاجه وهيا
             <br />
             الـ  <span className="text-[#faa000] font-bold">React.js</span> و <span className="text-[#faa000] font-bold">Vue.js</span> و <span className="text-[#faa000] font-bold">Angular.js</span>
@@ -170,7 +186,7 @@ function FrontEnd() {
           <br />
         </div>
 
-        <button className=' flex items-center gap-1 w-[160px] h-[45px] underline text-[19px] hover:text-blue-700  text-center leading-[40px] rounded-md transition-all delay-75 '><a href="/"> الصفحة الرئيسية </a>  <MdChevronLeft className="mt-1" /></button>
+        <button className='link flex items-center gap-1 w-[160px] h-[45px] underline text-[19px] text-center leading-[40px] rounded-md transition-all delay-75 hover:text-blue-700' style={{ color: color }}><a href="/" className="hover:text-blue-700"> الصفحة الرئيسية </a>  <MdChevronLeft className="mt-1 " /></button>
 
       </div>
       <div className="w-full flex items-center justify-center">

@@ -10,6 +10,7 @@ import { PiPathLight } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
 
 import Theme from '../theme/Theme';
+import Link from 'next/link';
 
 
 
@@ -25,7 +26,7 @@ function Nav() {
 
 
   return (
-    <div id='nav' className={` nav  bg-[#111827] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
+    <div id='nav' className={` nav bg-[#111827] w-full h-[80px] border-[#848d9778]  border-b-[1px]  flex items-center justify-between gap-3 px-[5%] fixed top-0 z-[444]`}>
       {/* logo */}
       <a href='/' className='flex items-center justify-between gap-3'>
         <Image src={logo} alt="" width={30} height={30} />
@@ -42,17 +43,23 @@ function Nav() {
           <a href="#projects" className={linksStyle}><button className='link'>المشاريع</button></a>
           <a href="#roadmap" className={linksStyle}><button className='link'>مسارات التعلم</button></a>
           <a href="#footer" className={linksStyle}><button className='link'>التواصل</button></a>
-
+          <div className={`${linksStyle} relative`} onClick={() => setMoreOption(!moreOption)}>
+            <button className='link' >ألمزيد</button>
+            <div className={`card ${moreOption ? ' h-auto p-3 border-[1px]' : 'h-0 border-0 '} w-72 flex flex-col items-center justify-start gap-y-3 absolute left-0 top-[155%] shadow-md rounded-[0_0_7px_7px]  border-[#848d9778] overflow-hidden z-30 transition-[all_2s]`}>
+              <Link href="website" className='link w-full'><button className='link p-1 w-[98%] rounded-md hover:bg-[#aaaaaa37] '>مواقع مهمة</button></Link>
+              <a href="#" className='link w-full'><button className='link p-1 w-[98%] rounded-md hover:bg-[#aaaaaa37] '>مواقع مهمة</button></a>
+              <a href="#" className='link w-full'><button className='link p-1 w-[98%] rounded-md hover:bg-[#aaaaaa37] '>مواقع مهمة</button></a>
+              <a href="#" className='link w-full'><button className='link p-1 w-[98%] rounded-md hover:bg-[#aaaaaa37] '>مواقع مهمة</button></a>
+            </div>
+          </div>
+          <div onMouseOver={() => setMoreOption(!moreOption)} className={` ${moreOption ? ' h-[100vh] w-full' : 'h-0 w-0'} absolute top-[80px] left-0 transition-[all_.3s] overflow-hidden`}></div>
         </div>
-
-
 
         {/* icon list */}
         <BsList onClick={openSdeBare} className='link scale-[2.3] cursor-pointer text-[#b0bbc8] ml-10  min-[1000px]:hidden' />
       </div>
 
       {/* back option div */}
-      <div onMouseOver={() => setMoreOption(!moreOption)} className={` ${moreOption ? ' h-[100vh] w-full' : 'h-0 w-0'} absolute top-[80px] left-0 transition-[all_.3s] overflow-hidden`}></div>
 
       {/* side bare */}
       <div className={`${openSide ? 'w-72' : 'w-0 p-0'} h-[89.5vh] pt-7 text-[18px] bg-[#19202b] shadow-2xl absolute right-0 top-[75px] transition-all ease-in-out delay-150 overflow-hidden min-[1131px]:hidden z-[100]`} style={{ direction: 'rtl' }}>
