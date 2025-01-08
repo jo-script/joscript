@@ -30,7 +30,13 @@ function Catalog() {
     '/events-imgs/photo_18_2024-12-26_16-38-36.jpg',
   ];
   return (
-    <div className="relative">
+    <div id='events' className="relative flex flex-col gap-10">
+
+      <div className='w-full flex items-center justify-center flex-col text-center gap-3'>
+        <p className='h-[2px] w-40 rounded-md bg-[#17191a] dark:bg-gray-100 mb-2'></p>
+        <h1 className='text-3xl font-bold text-[#17191a] dark:text-gray-100'>كواليس</h1>
+        <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>مجموعه من الصور واللحظات المختلفه من داخل جواسكريبت</p>
+      </div>
 
       {selectedImage && (
         <div
@@ -44,6 +50,7 @@ function Catalog() {
               layout="fill"
               objectFit="contain"
               className="rounded-lg w-full h-full"
+              loading='lazy'
             />
           </div>
         </div>
@@ -65,6 +72,7 @@ function Catalog() {
               width={100}
               height={Math.random() * 200 + 150}
               objectFit="cover"
+              loading="lazy"
             />
           </div>
         ))}

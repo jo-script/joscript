@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,13 +18,13 @@ function Header() {
                 </p>
 
                 <div>
-                    <Link href='#'>
+                    <Link href='https://wa.me/+201032734738'>
                         <button className='w-[200px] h-[45px] rounded-md bg-[#17191a] hover:bg-[#292c2e] active:bg-[#383b3d] shadow-[#17191a] dark:bg-[#292c2e] dark:hover:bg-[#323638] border border-[#c5c5c52d] text-gray-100  mt-6 transition-[all_.2s] active:dark:bg-[#565758d4]'>تواصل معنا</button>
                     </Link>
                 </div>
             </div>
             <div className='w-full h-full flex items-center justify-center '>
-                <img src="/Seminar-pana 1.svg" alt="joscriot" />
+                <Image src="/Seminar-pana 1.svg" alt="joscriot" className='w-full h-full' width={500} height={500} />
             </div>
         </div>
     )

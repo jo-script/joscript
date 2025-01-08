@@ -16,21 +16,15 @@ const almarai = Rubik({
 
 export default function Home() {
   return (
-    <div className={`home w-full flex flex-col gap-10 pt-20 px-[5%] relative ${almarai.className}`} >
+    <div className={`home w-full flex flex-col gap-20 pt-20 px-[5%] relative ${almarai.className}`} >
      
       <Header />
       <Catalog />
       <Projects />
       <Courses />
       <Scenes />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-
+      <br/>
+      
     </div>
   );
 }

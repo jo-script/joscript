@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 function Scenes() {
     return (
-        <div className='w-full  px-[5%] py-24 flex flex-col items-center justify-center mt-16 '>
+        <div className='w-full  px-[5%] flex flex-col items-center justify-centers gap-10 '>
             <div className='w-full flex items-center justify-center flex-col text-center gap-3'>
                 <p className='h-[2px] w-40 rounded-md bg-[#17191a] dark:bg-gray-100 mb-2'></p>
                 <h1 className='text-3xl font-bold text-[#17191a] dark:text-gray-100'> على ماذا نركز</h1>
                 <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'> أهم الأشياء التي نركز على تقديمها للطلاب</p>
             </div>
 
-            <div className='w-full mt-20 flex flex-col gap-24 '>
+            <div className='w-full flex flex-col gap-24 '>
                 <div className='w-full flex items-start justify-between gap-32 max-[1130px]:gap-10 max-[1130px]:flex-col-reverse max-[1130px]:items-center'>
                     <div className='text-start max-[1130px]:text-center flex flex-col gap-4'>
                         <h1 className='text-xl font-bold text-[#17191a] dark:text-gray-100'>التوجيه الصحيح للطلاب في رحلة البرمجة</h1>
@@ -28,7 +28,7 @@ function Scenes() {
                         </p>
 
                     </div>
-                    <img src='/Rectangle.png' alt='joscript' loading='lazy' />
+                    <Image src='/Rectangle.png' alt='joscript' loading='lazy' width={500} height={500} />
                 </div>
 
                 <div className='w-full flex items-start flex-row-reverse justify-between gap-32 max-[1130px]:gap-10 max-[1130px]:flex-col-reverse max-[1130px]:items-center'>
@@ -38,7 +38,7 @@ function Scenes() {
                         <h1 className='text-xl font-bold text-[#17191a] dark:text-gray-100 mt-8 mb-4'>تأثير التطبيقات العملية وحل المشكلات البرمجية على تطوير الطلاب</h1>
                         <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>تُساعد التطبيقات العملية الطلاب على فهم المفاهيم البرمجية بشكل أفضل من خلال تطبيقها على سيناريوهات واقعية وتساعد أيضا على تنمية مهارات البرمجة مثل تحليل البيانات، والتفكير النقدي والمنطقي وحل المشكلات</p>
                     </div>
-                    <img src='/Rectangle18.png' alt='problem solveng' loading='lazy' />
+                    <Image src='/Rectangle18.png' alt='problem solveng' loading='lazy'  width={500} height={500} />
                 </div>
 
                 <div className='w-full flex items-start justify-between gap-32 max-[1130px]:gap-10 max-[1130px]:flex-col-reverse max-[1130px]:items-center'>
@@ -52,7 +52,7 @@ function Scenes() {
                         <h1 className='text-xl font-bold text-[#17191a] dark:text-gray-100 mt-8 mb-4'>بيئة مناسبة لتعلم</h1>
                         <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>التعلم في بيئةٍ مُريحةٍ ومُحفزةٍ يُجعل تجربة تعلّم البرمجة ممتعةً وسهلة وتُساعد الطلاب على التركيز والتعلم بشكل فعّال</p>
                     </div>
-                    <img src='/Rectangle19.png' alt='html css javascript' loading='lazy' />
+                    <Image src='/Rectangle19.png' alt='html css javascript' loading='lazy' width={500} height={500} />
                 </div>
 
 

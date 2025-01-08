@@ -55,7 +55,7 @@ function Projects() {
         },
     ]
     return (
-        <div className='w-full flex flex-col gap-10'>
+        <div id='projects' className='w-full flex flex-col gap-10'>
             <div className='w-full flex items-center justify-center flex-col text-center gap-3'>
                 <p className='h-[2px] w-40 rounded-md bg-[#17191a] dark:bg-gray-100 mb-2'></p>
                 <h1 className='text-3xl font-bold text-[#17191a] dark:text-gray-100'>المشاريع</h1>
@@ -69,7 +69,7 @@ function Projects() {
                         <div  key={index} className='break-inside-avoid w-full p-1 backdrop-blur-md mb-3  bg-white rounded-lg shadow-md  hover:scale-[1.02] transition-[all_.2s] cursor-pointer'>
                             {index == 0 || index == 6 ? (
                                 <video src={item.img} alt="" className='rounded-md ' autoPlay controls />
-                            ) : (<img style={{height:'auto'}} src={item.img} alt="" className='rounded-md ' />)}
+                            ) : (<Image style={{height:'auto'}} src={item.img} alt="" className='rounded-md  w-full h-full' width={200} height={200} loading='lazy' />)}
                             <div className='px-2 text-end mt-2 rounded-md'>
                                 <h1 className='text-lg font-bold text-[#17191a]'>{item.title}</h1>
                             </div>

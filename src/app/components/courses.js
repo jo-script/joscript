@@ -65,7 +65,7 @@ function Courses() {
   ]
 
   return (
-    <div style={{ direction: 'ltr', }} className='relative w-full flex flex-col items-center justify-center gap-10'>
+    <div id='courses' style={{ direction: 'ltr', }} className='relative w-full flex flex-col items-center justify-center gap-10'>
       <div className='w-full flex items-center justify-center flex-col text-center gap-3'>
         <p className='h-[2px] w-40 rounded-md bg-[#17191a] dark:bg-gray-100 mb-2'></p>
         <h1 className='text-3xl font-bold text-[#17191a] dark:text-gray-100'>الكورسات التي نقدمها</h1>

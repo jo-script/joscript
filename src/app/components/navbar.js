@@ -47,13 +47,13 @@ export default function Nav() {
 
         {/* Social Media Links */}
         <div className="flex items-center gap-2 rounded-full dark:text-gray-100 border border-gray-400 py-1 px-2 ">
-          <Link href="#">
+          <Link href="https://www.facebook.com/joscript1" target='_blank'>
             <MdOutlineFacebook size={20} className="hover:text-blue-800 transition-all " />
           </Link>
-          <Link href="#">
+          <Link href="https://wa.me/+201032734738" target='_blank'>
             <RiWhatsappFill size={20} className="hover:text-green-600 transition-all " />
           </Link>
-          <Link href="#">
+          <Link href="https://www.youtube.com/@jo-script" target='_blank'>
             <FaYoutube size={20} className="hover:text-red-600 transition-all " />
           </Link>
         </div>
@@ -62,16 +62,17 @@ export default function Nav() {
 
       {/* links pages */}
       <div className='flex items-center gap-3 max-[940px]:hidden'>
-        <Link href='#' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
+        <Link href='/' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
           الصفحة الرئسية
         </Link>
-        <Link href='#' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
-          الكورسات        </Link>
-        <Link href='#' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
-          المشاريع
+        <Link href='/#events' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
+          الكواليس
         </Link>
-        <Link href='#' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
-          مسارات التعلم
+        <Link href='/#courses' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
+          الكورسات
+        </Link>
+        <Link href='/#projects' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
+          المشاريع
         </Link>
         <Link href='/web-and-tools' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
           مواقع وادوات
@@ -81,7 +82,7 @@ export default function Nav() {
       {/* logo */}
       <div className="flex items-center gap-3 ">
         <h1 className="text-2xl font-bold dark:text-gray-100 ">joscript</h1>
-        <Image src="/Frame.svg" width={40} height={40} alt="joscript logo" />
+        <Image src="/Frame.svg" width={40} height={40} alt="joscript logo" loading='lazy' />
       </div>
     </nav>
   );
