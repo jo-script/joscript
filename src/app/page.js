@@ -1,36 +1,36 @@
 import Image from "next/image";
-
-import Nav from "./components/nav/nav";
-import HomePage from "./components/home/homePage";
-import Scenes from "./components/scenes/Scenes";
-import Services from './components/servicess/services'
-import Projects from "./components/projects/projects";
-import TeamWork from "./components/team work/TeamWork";
-import ShowImg from "./components/show-img/ShowImg";
-import Footer from "./components/footer/Footer";
+import "../../public/Frame.svg"
+import Header from "./components/header";
+import Courses from "./components/courses";
+import Catalog from "./components/catalog";
+import Scenes from "./components/scenes";
+import Projects from "./components/projects";
 
 // font
-import { Rubik} from "next/font/google";
-
-import Roadmap from "./components/roadmap/page";
+import { Rubik } from "next/font/google";
 
 const almarai = Rubik({
-  subsets:['arabic'],
-  weight:'300'
+  subsets: ['arabic'],
+  weight: '300'
 })
 
 export default function Home() {
   return (
-    <div className={ `home w-full ${almarai.className}`} >
-      <Nav />
-      <HomePage />
-      <ShowImg />
-      <Services />
-      <Scenes />
+    <div className={`home w-full flex flex-col gap-10 pt-20 px-[5%] relative ${almarai.className}`} >
+     
+      <Header />
+      <Catalog />
       <Projects />
-      <Roadmap />
-      {/* <TeamWork /> */}
-      <Footer />
+      <Courses />
+      <Scenes />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+
     </div>
   );
 }
