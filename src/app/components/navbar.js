@@ -21,11 +21,10 @@ export default function Nav() {
 
   return (
     <nav className="w-full h-20 fixed top-0 flex items-center justify-between px-[3%] backdrop-blur-lg bg-white/5 shadow-sm z-[9999]">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 ">
+
         {/* sidebar */}
-
-
-        <div className={`${sidebar ? 'w-60' : 'w-0'} z-[999] min-[940px]:w-0 overflow-hidden backdrop-blur-sm bg-white absolute top-full right-0  transition-all delay-75 `}>
+        <div className={`${sidebar ? 'w-60' : 'w-0'} z-[999] min-[940px]:w-0 overflow-hidden  bg-[#e8e8e8] shadow-[-10px_15px_10px_0_#81818121] absolute top-full right-0  transition-all delay-75 `}>
           <Sidebar />
         </div>
 
@@ -46,15 +45,15 @@ export default function Nav() {
         <ThemeToggle />
 
         {/* Social Media Links */}
-        <div className="flex items-center gap-2 rounded-full dark:text-gray-100 border border-gray-400 py-1 px-2 ">
+        <div className="flex items-center gap-2 rounded-full dark:text-gray-100 border border-gray-400 pt-1 pb-0.5 px-2 ">
           <Link href="https://www.facebook.com/joscript1" target='_blank'>
-            <MdOutlineFacebook size={20} className="hover:text-blue-800 transition-all " />
+            <i className="fi fi-brands-facebook hover:text-blue-800 transition-all " ></i>
           </Link>
           <Link href="https://wa.me/+201032734738" target='_blank'>
-            <RiWhatsappFill size={20} className="hover:text-green-600 transition-all " />
+            <i className=" fi-brands-whatsapp hover:text-green-600 transition-all "></i>
           </Link>
           <Link href="https://www.youtube.com/@jo-script" target='_blank'>
-            <FaYoutube size={20} className="hover:text-red-600 transition-all " />
+          <i className="fi fi-brands-youtube hover:text-red-600 transition-all"></i> 
           </Link>
         </div>
       </div>

@@ -32,7 +32,7 @@ function Projects() {
         {
             img: '/project-img/final task.mp4',
             title: 'front end',
-        },        
+        },
         {
             img: '/project-img/Screenshot 2024-12-17 215515.png',
             title: 'front end',
@@ -66,10 +66,14 @@ function Projects() {
             <div className=' columns-2 sm:columns-4 md:columns-5 gap-3'>
                 {
                     data.map((item, index) => (
-                        <div  key={index} className='break-inside-avoid w-full p-1 backdrop-blur-md mb-3  bg-white rounded-lg shadow-md  hover:scale-[1.02] transition-[all_.2s] cursor-pointer'>
+                        <div key={index} className='break-inside-avoid w-full p-1 backdrop-blur-md mb-3  bg-white rounded-lg shadow-md  cursor-pointer'>
                             {index == 0 || index == 6 ? (
                                 <video src={item.img} alt="" className='rounded-md ' autoPlay controls />
-                            ) : (<Image style={{height:'auto'}} src={item.img} alt="" className='rounded-md  w-full h-full' width={200} height={200} loading='lazy' />)}
+                            ) : (
+                                <div className='overflow-hidden'>
+                                    <Image style={{ height: 'auto' }} src={item.img} alt="" className='rounded-md  w-full h-full hover:scale-[1.1] transition-all' width={200} height={200} />
+                                </div>
+                            )}
                             <div className='px-2 text-end mt-2 rounded-md'>
                                 <h1 className='text-lg font-bold text-[#17191a]'>{item.title}</h1>
                             </div>

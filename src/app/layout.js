@@ -11,9 +11,8 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="ar" style={{scrollBehavior:"smooth"}}>
+    <html lang="ar" style={{ scrollBehavior: "smooth" }}>
       <head>
-
         <link rel="icon" href="/Frame.svg" />
       </head>
       <body className={`${inter.className} dark:bg-[#17191a] bg-[#e8e8e8] relative`} style={{ direction: "rtl" }}>

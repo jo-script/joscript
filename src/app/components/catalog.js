@@ -61,19 +61,20 @@ function Catalog() {
         {allImgs.map((src, index) => (
           <div
             key={index}
-            className="relative w-full mb-2 cursor-pointer"
+            className="relative w-full mb-2 cursor-pointer overflow-hidden "
             onClick={() => setSelectedImage(src)}
           >
-            <Image
-              src={src}
-              alt={`Image ${index + 1}`}
-              className="rounded-lg border border-[#17191a56]"
-              layout="responsive"
-              width={100}
-              height={Math.random() * 200 + 150}
-              objectFit="cover"
-              loading="lazy"
-            />
+            <div className='overflow-hidden'>
+              <Image
+                src={src}
+                alt={`Image ${index + 1}`}
+                className="rounded-lg border border-[#17191a56] hover:scale-[1.2] transition-all"
+                layout="responsive"
+                width={100}
+                height={Math.random() * 200 + 150}
+                objectFit="cover"
+              />
+            </div>
           </div>
         ))}
       </div>
