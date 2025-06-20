@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 function Catalog() {
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState('');
 
 
   const allImgs = [
@@ -35,7 +35,7 @@ function Catalog() {
       <div className='w-full flex items-center justify-center flex-col text-center gap-3'>
         <p className='h-[2px] w-40 rounded-md bg-[#17191a] dark:bg-gray-100 mb-2'></p>
         <h1 className='text-3xl font-bold text-[#17191a] dark:text-gray-100'>كواليس</h1>
-        <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>مجموعه من الصور واللحظات المختلفه من داخل جواسكريبت</p>
+        <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>مجموعه من الصور واللحظات المختلفه من داخل جوسكريبت</p>
       </div>
 
       {selectedImage && (
@@ -46,9 +46,11 @@ function Catalog() {
           <div className="relative w-4/5 h-[400px] p-4 rounded-lg shadow-lg">
             <Image
               src={selectedImage}
-              alt="Selected Image"
-              layout="fill"
-              objectFit="contain"
+              width={100}
+              height={100}
+              alt="joscript javascript web frontend backend "
+              // layout="fill"
+              // objectFit="contain"
               className="rounded-lg w-full h-full"
               loading='lazy'
             />

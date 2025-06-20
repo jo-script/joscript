@@ -45,15 +45,15 @@ export default function Nav() {
         <ThemeToggle />
 
         {/* Social Media Links */}
-        <div className="flex items-center gap-2 rounded-full dark:text-gray-100 border border-gray-400 pt-1 pb-0.5 px-2 ">
+        <div className="flex items-center gap-2 rounded-full dark:text-gray-100 border border-gray-400 py-1 px-2 ">
           <Link href="https://www.facebook.com/joscript1" target='_blank'>
-            <i className="fi fi-brands-facebook hover:text-blue-800 transition-all " ></i>
+          <MdOutlineFacebook size={20} className="hover:text-blue-500 transition-all "/>
           </Link>
           <Link href="https://wa.me/+201032734738" target='_blank'>
-            <i className=" fi-brands-whatsapp hover:text-green-600 transition-all "></i>
+            <RiWhatsappFill size={20} className="hover:text-green-500 transition-all "/>
           </Link>
           <Link href="https://www.youtube.com/@jo-script" target='_blank'>
-          <i className="fi fi-brands-youtube hover:text-red-600 transition-all"></i> 
+          <FaYoutube size={20} className="hover:text-red-500 transition-all "/>
           </Link>
         </div>
       </div>
@@ -73,15 +73,15 @@ export default function Nav() {
         <Link href='/#projects' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
           المشاريع
         </Link>
-        <Link href='/web-and-tools' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
+        {/* <Link href='/web-and-tools' className={` flex items-center gap-2 px-2 py-1 dark:text-gray-100 hover:bg-[#a1a1a124] border border-[#e8e8e800] rounded-md font-medium transition-[all_.2s]`}>
           مواقع وادوات
-        </Link>
+        </Link> */}
       </div>
 
       {/* logo */}
       <div className="flex items-center gap-3 ">
         <h1 className="text-2xl font-bold dark:text-gray-100 ">joscript</h1>
-        <Image src="/Frame.svg" width={40} height={40} alt="joscript logo" loading='lazy' />
+        <Image src="/Frame.svg" width={35} height={35} alt="joscript logo" loading='lazy' />
       </div>
     </nav>
   );

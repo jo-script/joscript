@@ -62,13 +62,12 @@ function Projects() {
                 <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>المشاريع التي نفذها الطلاب خلال مدة الكورس وبعد التخرج</p>
             </div>
 
-
             <div className=' columns-2 sm:columns-4 md:columns-5 gap-3'>
                 {
                     data.map((item, index) => (
                         <div key={index} className='break-inside-avoid w-full p-1 backdrop-blur-md mb-3  bg-white rounded-lg shadow-md  cursor-pointer'>
                             {index == 0 || index == 6 ? (
-                                <video src={item.img} alt="" className='rounded-md ' autoPlay controls />
+                                <video src={item.img} alt="joscript javascript web frontend backend " className='rounded-md ' autoPlay controls />
                             ) : (
                                 <div className='overflow-hidden'>
                                     <Image style={{ height: 'auto' }} src={item.img} alt="" className='rounded-md  w-full h-full hover:scale-[1.1] transition-all' width={200} height={200} />

@@ -4,8 +4,7 @@ import { Roboto } from 'next/font/google';
 const poppins = Roboto({ subsets: ['latin'], weight: ['500'], });
 
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import { MdClose } from "react-icons/md";
+import React, { useState } from 'react'
 
 
 function Courses() {
@@ -47,6 +46,14 @@ function Courses() {
       background: ['#3b88e925', '#9162c025', '#d1772425', '#449d5d25']
     },
     {
+      icon: '/icons-cu/Learning-cuate.svg',
+      title: 'Kids programming',
+      description: 'تعليم البرمجة للأطفال ',
+      content: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'tailwindCss', 'ReactJs', 'NextJs', 'Git', 'GitHub', 'Problem-Solving',],
+      color: ['#3b88e9', '#9162c0', '#d17724', '#449d5d'],
+      background: ['#3b88e925', '#9162c025', '#d1772425', '#449d5d25']
+    },
+    {
       icon: '/icons-cu/Cyber attack-pana.svg',
       title: 'Cyber Security',
       description: 'تأمين المواقع والتطبيقات والأنظمه من الإختراق',
@@ -62,6 +69,7 @@ function Courses() {
       color: ['#3b88e9', '#9162c0', '#d17724', '#449d5d'],
       background: ['#3b88e925', '#9162c025', '#d1772425', '#449d5d25']
     },
+
   ]
 
   return (
@@ -69,39 +77,9 @@ function Courses() {
       <div className='w-full flex items-center justify-center flex-col text-center gap-3'>
         <p className='h-[2px] w-40 rounded-md bg-[#17191a] dark:bg-gray-100 mb-2'></p>
         <h1 className='text-3xl font-bold text-[#17191a] dark:text-gray-100'>الكورسات التي نقدمها</h1>
-        <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جو اسكريبت</p>
+        <p className='text-[#2E3539] dark:text-[#bfbfbf] text-lg'>مجموعة الكورسات والدورات التدريبيه التي نقدمها من خلال جوسكريبت</p>
       </div>
 
-
-
-      {/* tap show road map */}
-      {/* {
-        index ? (
-          <div className={`${openTap ? ' scale-1 ' : 'scale-0 '} w-[93%] h-[92vh] fixed top-[5%] z-[99991] p-[2%] flex items-center flex-col gap-3 rounded-2xl bg-[#e8e8e8] dark:bg-[linear-gradient(180deg,#17191a_20%,#020001_100%)] border border-[rgba(255,255,255,0.1)] shadow-2xl transition-[all_.3s]`}>
-            <Image src={index.icon} alt={index.title} width={60} height={60} />
-            <div className='flex flex-col gap-3 '>
-              <h1 className={`${poppins.className} m-0 text-center text-2xl text-[#17191a] dark:text-gray-100 font-bold `}>{index.title}</h1>
-              <p className='w-full text-[#17191ad4] text-start dark:text-gray-100 mt-[-10px]'>{index.description}</p>
-            </div>
-            <div className='flex gap-2 flex-wrap '>
-              {
-                index.content.map((vv, i) => (
-                  <p className='px-2 rounded-md text-sm font-semibold'
-                    key={i} style={{
-                      color: index.color[i % index.color.length],
-                      backgroundColor: index.background[i % index.background.length],
-                    }} >
-                    {vv}
-                  </p>
-                ))
-              }
-
-            </div>
-            <MdClose onClick={() => setOpenTap(!openTap)} size={25} className='absolute right-3 top-3 cursor-pointer text-[#17191a] hover:bg-[#ffffff6c] rounded-lg p-1' />
-
-          </div>
-        ) : ''
-      } */}
 
       {/* background tap close  */}
       <div onClick={() => setOpenTap(!openTap)} className={`${openTap ? ' scale-1 w-full h-[100vh]' : 'scale-0 w-0 h-0'} fixed top-0 left-0 z-[9999]   backdrop-blur-sm bg-black/30`}>

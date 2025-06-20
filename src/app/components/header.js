@@ -26,7 +26,6 @@ function Header() {
             <div className='w-full h-full flex items-center justify-center '>
                 <Image src="/Seminar-pana 1.svg" alt="joscriot" className='w-full h-full' width={500} height={500} />
             </div>
-
             
         </div>
     )

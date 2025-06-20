@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~@flaticon/flaticon-uicons/css/all/all";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -88,3 +87,7 @@ body {
   scale: 1;
   transition: all 0.5s;
 }
+
+
+
+
