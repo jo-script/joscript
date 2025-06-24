@@ -46,7 +46,7 @@ function Footer() {
             </h3>
             <div className="flex flex-col justify-start gap-2 text-gray-400">
               <a
-                href="https://facebook.com/joscript1"
+                href="https://facebook.com/joscript.io"
                 target="_blank"
                 className="  flex items-center gap-2 justify-center text-gray-400 text-[16px] hover:underline hover:text-gray-200"
               >
@@ -60,7 +60,7 @@ function Footer() {
                 <IoLogoWhatsapp /> Whatsapp
               </a>
               <a
-                href="https://instagram.com/joscript1"
+                href="https://instagram.com/joscript.io"
                 target="_blank"
                 className="  flex items-center gap-2 justify-center text-gray-400 text-[16px] hover:underline hover:text-gray-200"
               >

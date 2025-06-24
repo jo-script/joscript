@@ -46,7 +46,7 @@ export default function Nav() {
 
         {/* Social Media Links */}
         <div className="flex items-center gap-2 rounded-full dark:text-gray-100 border border-gray-400 py-1 px-2 ">
-          <Link href="https://www.facebook.com/joscript1" target='_blank'>
+          <Link href="https://www.facebook.com/joscript.io" target='_blank'>
           <MdOutlineFacebook size={20} className="hover:text-blue-500 transition-all "/>
           </Link>
           <Link href="https://wa.me/+201032734738" target='_blank'>
