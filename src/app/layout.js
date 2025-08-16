@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" style={{ scrollBehavior: "smooth" }}>
       <head>
-        <link rel="icon" href="/jo-logoo.svg" />
+        <link rel="icon" href="/jo.svg" />
       </head>
       <body className={`${inter.className} `} style={{ direction: "rtl" }}>
         {/* <Nav /> */}
