@@ -2,8 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
-import Nav from "./components/navbar";
-import Footer from "./components/footer";
+// import Nav from "./components/navbar";
+// import Footer from "./components/footer";
 
 export const metadata = {
   title: "joscript",
@@ -13,12 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" style={{ scrollBehavior: "smooth" }}>
       <head>
-        <link rel="icon" href="/Frame.svg" />
+        <link rel="icon" href="/jo-logoo.svg" />
       </head>
-      <body className={`${inter.className} dark:bg-[#17191a] bg-[#e8e8e8] relative`} style={{ direction: "rtl" }}>
-        <Nav />
+      <body className={`${inter.className} `} style={{ direction: "rtl" }}>
+        {/* <Nav /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

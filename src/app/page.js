@@ -1,30 +1,35 @@
-import Image from "next/image";
-import "../../public/Frame.svg"
-import Header from "./components/header";
-import Courses from "./components/courses";
-import Catalog from "./components/catalog";
-import Scenes from "./components/scenes";
-import Projects from "./components/projects";
+'use client';
 
-// font
-import { Rubik } from "next/font/google";
+// import "../../public/Frame.svg"
 
-const almarai = Rubik({
+import { Cairo, Rubik } from "next/font/google";
+import { Navigation } from "./components/Navigation.tsx";
+import { HeroSection } from "./components/HeroSection.tsx";
+import { BehindTheScenesSection } from "./components/BehindTheScenesSection.tsx";
+import { CoursesSection } from "./components/CoursesSection.tsx";
+import { ProjectsSection } from "./components/ProjectsSection.tsx";
+import { ValuesSection } from "./components/ValuesSection.tsx";
+import { Toaster } from "./components/ui/sonner.tsx";
+import { Footer } from "./components/Footer.tsx";
+// import { Footer } from "./components/Footer";
+
+const almarai = Cairo({
   subsets: ['arabic'],
-  weight: '300'
+  weight: '400',
+  display: 'swap'
 })
 
-export default function Home() {
+export default function App() {
   return (
-    <div className={`home w-full flex flex-col gap-20 pt-20 px-[5%] relative ${almarai.className}`} >
-     
-      <Header />
-      <Catalog />
-      <Projects />
-      <Courses />
-      <Scenes />
-      <br/>
-      
-    </div>
+    <div className={`${almarai.className} min-h-screen bg-background text-foreground dark`}>
+          <Navigation />
+          <HeroSection />
+          <BehindTheScenesSection />
+          <CoursesSection />
+          {/* <ProjectsSection /> */}
+          <ValuesSection />
+          <Footer />
+          <Toaster />
+        </div>
   );
 }
